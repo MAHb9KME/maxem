@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<title>Maxem</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Cache-control" content="public">
+	<meta name="description" content="Maxem" />
+	<link rel="stylesheet" href="style.css" />
+
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="images/favicon/site.webmanifest">
+	<link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+</head>
+
+<body>
+	<div class="overflow">
+
+		<!-- Header START -->
+		<header class="header">
+			<div class="container">
+				<div class="header__top">
+
+					<div class="header__side-left">
+						<div class="burger">
+							<div class="burger__line">
+								<span></span>
+							</div>
+						</div>
+						<a class="logo" href="#">
+							<img class="logo__img" src="images/pics/logo.svg" alt="logo">
+						</a>
+						<div class="header__wrplaces">
+							<a class="header__phone" href="tel:88005117840">8 800 511 78 40</a>
+							<div class="header__cities">
+								<div class="header__cities-main">Санкт-Петербург</div>
+								<form class="h-cities">
+									<div class="h-cities__wrsearch">
+										<input class="h-cities__search" type="text" placeholder="Введите название города">
+									</div>
+									<ul class="h-cities__ul">
+										<li class="h-cities__li">Москва</li>
+										<li class="h-cities__li">Санкт-Петербург</li>
+										<li class="h-cities__li">Чебоксары</li>
+										<li class="h-cities__li">Воронеж</li>
+										<li class="h-cities__li h-cities__li--exit">Выйти</li>
+									</ul>
+								</form>
+							</div>
+						</div>
+					</div>
+
+					<div class="header__side-right">
+						<form class="header-searh__form" action="">
+							<input class="header-searh__form-inp" type="text" placeholder="Поиск по сайту">
+							<input class="header-searh__form-submit" type="submit">
+							<span class="header-searh__form-trigger"></span>
+						</form>
+						<a class="header__icon header__icon--favorite" href="#">
+							<span class="header__icon-numb">12</span>
+						</a>
+						<a class="header__icon header__icon--basket" href="#">
+							<span class="header__icon-numb">2</span>
+						</a>
+						<div class="profile">
+							<a class="profile-account hide" href="#">
+								<span>Личный кабинет</span>
+							</a>
+							<div class="profile-log">
+								<div class="profile-log__name">
+									<span>Константин</span>
+								</div>
+								<div class="profile-log__menu">
+									<ul class="profile-log__menu-ul">
+										<li class="profile-log__menu-li">
+											<a class="profile-log__menu-link" href="#">Мои заказы</a>
+										</li>
+										<li class="profile-log__menu-li">
+											<a class="profile-log__menu-link" href="#">Профиль заказов</a>
+										</li>
+										<li class="profile-log__menu-li">
+											<a class="profile-log__menu-link" href="#">Настройка аккаунта</a>
+										</li>
+										<li class="profile-log__menu-li">
+											<a class="profile-log__menu-link" href="#">Выйти</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header__bottom">
+					<nav class="main-menu">
+						<ul class="main-menu__ul">
+							<li class="main-menu__li">
+								<a class="main-menu__link" href="#">О компании</a>
+							</li>
+							<li class="main-menu__li">
+								<a class="main-menu__link" href="#">Каталог фейерверков</a>
+							</li>
+							<li class="main-menu__li">
+								<a class="main-menu__link" href="#">Оптовым покупателям</a>
+							</li>
+							<li class="main-menu__li">
+								<a class="main-menu__link" href="#">Доставка и возврат</a>
+							</li>
+							<li class="main-menu__li">
+								<a class="main-menu__link" href="#">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+
+					<div class="soc-menu">
+						<ul class="soc-menu__ul">
+							<li class="soc-menu__li">
+								<a class="soc-menu__link" href="#">Вконтакте</a>
+							</li>
+							<li class="soc-menu__li">
+								<a class="soc-menu__link" href="#">Rutube</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- Header END -->
+
+		<!-- Main Slider START -->
+		<div class="main-slider">
+			<div class="container">
+				<div class="main-slider__inner">
+					<div class="main-slider__slide">
+						<div class="main-slider__aside">
+							<div class="container">
+								<div class="main-slider__asd">
+									<div class="title main-slider__title">The great firework way</div>
+									<div class="main-slider__control">
+										<a class="main-slider__btn btn btn--white" href="#">Выбрать фейерверк</a>
+										<div class="main-slider__arrows">
+											<div class="main-slider__arrow main-slider__arrow-left" onclick="jQuery('.main-slider__inner').slick('slickPrev')"></div>
+											<div class="main-slider__arrow main-slider__arrow-right" onclick="jQuery('.main-slider__inner').slick('slickNext')"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="main-slider__cont">
+							<!-- <picture>
+								<source type="image/webp" srcset="images/pics/main-slide-1.webp">
+								<img class="main-slider__cont-img" loading="lazy" src="images/pics/main-slide-1.jpg" alt="picture" width="880" height="460">
+							</picture> -->
+						</div>
+					</div>
+					<div class="main-slider__slide">
+						<div class="main-slider__aside">
+							<div class="container">
+								<div class="main-slider__asd">
+									<div class="title main-slider__title">The great firework way</div>
+									<div class="main-slider__control">
+										<a class="main-slider__btn btn btn--white" href="#">Выбрать фейерверк</a>
+										<div class="main-slider__arrows">
+											<div class="main-slider__arrow main-slider__arrow-left" onclick="jQuery('.main-slider__inner').slick('slickPrev')"></div>
+											<div class="main-slider__arrow main-slider__arrow-right" onclick="jQuery('.main-slider__inner').slick('slickNext')"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="main-slider__cont">
+							<!-- <picture>
+								<source type="image/webp" srcset="images/pics/main-slide-1.webp">
+								<img class="main-slider__cont-img" loading="lazy" src="images/pics/main-slide-1.jpg" alt="picture" width="880" height="460">
+							</picture> -->
+						</div>
+					</div>
+				</div>
+			</div> 
+		</div>
+		<!-- Main Slider END -->
+
+	
+
+
+	</div>	
+
+	<link rel="stylesheet" href="css/responsive.css" />
+	<link rel="stylesheet" href="fonts/fonts.css" />
+	<link rel="stylesheet" href="css/slick.min.css" />
+	<script src='js/jquery-3.5.1.min.js'></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.inputmask.js"></script>
+	<script src="js/template.js"></script>
+	
+</body>
+</html>
