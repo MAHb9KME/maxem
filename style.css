@@ -523,7 +523,7 @@ header nav .menu_container .menu_wrapper .footer{
     box-sizing: border-box;
 }
 .overflow {
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
 
 
@@ -620,12 +620,32 @@ header nav .menu_wrapper ul li ul.sub-menu li a:hover {
     height: 2px;
     background-color: #C8A06C;
     margin: 3px 0;
-    transition: .3s all;
+    transition: .2s all;
+    position: relative;
+    top: 0;
 }
 
 .burger__line:after, 
 .burger__line:before {
     width: 16px;
+}
+
+body.burger-active .burger__line:before {
+    top: 5px;
+    transform: rotate(-45deg);
+    margin-top: 6px;
+    width: 16px;
+}
+
+body.burger-active .burger__line span {
+    transform: rotate(45deg);
+    margin-top: 0;
+    width: 16px;
+}
+
+body.burger-active .burger__line:after {
+    bottom: 0px;
+    opacity: 0;
 }
 
 
@@ -643,7 +663,7 @@ header nav .menu_wrapper ul li ul.sub-menu li a:hover {
     justify-content: flex-start;
     align-items: center;
     position: relative;
-    z-index: 1;
+    z-index: 4;
     overflow: hidden;
 }
 .header__wrplaces--active {
@@ -691,7 +711,7 @@ header nav .menu_wrapper ul li ul.sub-menu li a:hover {
     z-index: 2;
     right: 0;
     left: auto;
-    top: 200%;
+    top: 180%;
     opacity: 0;
     padding: 16px 0;
     background: #fff;
@@ -830,7 +850,7 @@ header nav .menu_wrapper ul li ul.sub-menu li a:hover {
 .profile {
     margin: 0px 0px 0px 40px;
     position: relative;
-    z-index: 2;
+    z-index: 4;
     overflow: hidden;
 }
 
@@ -927,7 +947,7 @@ header nav .menu_wrapper ul li ul.sub-menu li a:hover {
     position: absolute;
     right: 0;
     left: auto;
-    top: 200%;
+    top: 180%;
     opacity: 0;
     padding: 16px 0;
     background: #fff;
@@ -958,6 +978,134 @@ header nav .menu_wrapper ul li ul.sub-menu li a:hover {
     color: #AD895B;
     background: rgba(200, 160, 108, 0.16);
 }
+.header__wrapper {
+    overflow: hidden;
+}
+.header__wrnav {
+    padding: 40px 0 50px;
+    position: absolute;
+    background-color: #fff;
+    top: 120%;
+    opacity: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 2;
+    transition: .2s all;
+}
+
+body.burger-active .header__wrapper {
+    overflow: initial;
+}
+
+body.burger-active .header__wrnav {
+    top: 100%;
+    opacity: 1;
+}
+
+.header__wrnav:before,
+.header__wrnav:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.header__wrnav:before {
+    left: -100%;
+    width: 100%;
+}
+.header__wrnav:after {
+    left: auto;
+    right: -100%;
+    width: 100%;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.header__company {
+    width: 22.5%;
+    border-right: 1px solid #EBEBEB;;
+}
+.header__nav-maintlt {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 36px;
+    color: #333333;
+    margin: 0px 0px 18px 0px;
+    transition: .2s color;
+    display: block;
+}
+.header__nav-maintlt:hover {
+    color: #C8A06C;
+}
+.header__nav-ul {
+}
+.header__catalog--ul {
+    columns: 3;
+}
+.header__nav-li {
+}
+.header__nav-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 40px;
+    color: #333333;
+    transition: .2s color;
+    display: block;
+}
+.header__nav-link:hover {
+    color: #C8A06C;
+}
+.header__nav-li ul {
+    padding: 0;
+    margin: 0;
+    margin-top: 4px;
+}
+.header__nav-li ul li {
+    list-style-type: none;
+}
+.header__nav-li ul li a {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 33px;
+    color: #333333;
+    display: block;
+    padding-left: 16px;
+    position: relative;
+    z-index: 1;
+    transition: .2s color;
+}
+.header__nav-li ul li a:hover {
+    color: #C8A06C;
+}
+.header__nav-li ul li a:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #C8A06C;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.header__catalog {
+    width: 77.5%;
+    padding: 0 40px 0 52px;
+}
+
+
+
 .header__bottom {
     display: flex;
     justify-content: space-between;

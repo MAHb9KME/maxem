@@ -335,7 +335,25 @@ $(function(){
 	});
 
 
+	$(document).on('click', '.burger', function()
+	{
+		if( $('body').hasClass('burger-active') )
+		{
+			$('body').removeClass('burger-active')
+		}
+		else
+		{
+			$('body').addClass('burger-active')
+		}
+	})
 
+	$(document).click(function(event)
+	{
+		if ($(event.target).closest(".burger").length || $(event.target).closest(".header__wrnav").length ) return;
+		event.stopPropagation();
+
+		$('body').removeClass('burger-active')
+	})
 
 
 
