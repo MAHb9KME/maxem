@@ -171,12 +171,14 @@ h1 {
 h1 strong {
     font-weight: 500;
 }
-h2 {}
+h2 {
+    margin: 0px 0px 28px 0px;
+}
 .title {
-    font-size:48px;
-    color: #333333;
     font-weight: 500;
-    line-height:64px;
+    font-size: 24px;
+    line-height: 36px;
+    color: #333333;
 }
 h1 a,
 h2 a,
@@ -1257,6 +1259,287 @@ body.burger-active .header__wrnav {
     width: 100%;
 }
 /* Main Slider END */
+
+/* Catalog START */
+.catalog {
+}
+.catalog__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 56px 0;
+}
+.sidebar {
+    width: 23.334%;
+}
+.sidebar__section {
+}
+.sidebar__main-tlt {
+}
+.sidebar__main-tlt--catalog {
+}
+.sidebar__content {
+}
+.sidebar__content-ul {
+}
+.sidebar__content-li {
+}
+.sidebar__content-link {
+}
+.sidebar__content-name {
+}
+.sidebar__content-arrow {
+}
+.sidebar__main-tlt--filter {
+}
+.sidebar__part {
+}
+.sidebar__part--one {
+}
+.sidebar__line {
+}
+.sidebar__line-name {
+}
+.sidebar__focus {
+}
+.selection {
+}
+.sidebar__selection-input {
+}
+.sidebar__selected {
+}
+.sidebar__selection-ul {
+}
+.sidebar__selection-li {
+}
+.sidebar__wrapper {
+}
+.sidebar__full {
+}
+.sidebar__half {
+}
+.sidebar__half-input {
+}
+.sidebar__half-rub {
+}
+.sidebar__part--two {
+}
+.alot {
+}
+.alot__header {
+}
+.alot__header-selectall {
+}
+.sidebar__alot {
+}
+.sidebar__alot-item {
+}
+.sidebar__alot-input {
+}
+.sidebar__alot-label {
+}
+.sidebar__alist {
+}
+.sidebar__alist-item {
+}
+.sidebar__alist-input {
+}
+.sidebar__alist-label {
+}
+.sidebar__btn-more {
+}
+.sidebar__btn-reset {
+}
+.sidebar__filter-more {
+}
+.rutube {
+}
+.rutube__title {
+}
+.rutube__btn {
+}
+.catalog__content {
+    width: 72.667%;
+}
+.typelist {
+}
+.eventlist {
+}
+.typelist__ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: -4px;
+}
+.eventlist .typelist__ul {
+    margin-bottom: 20px;
+}
+.typelist__li {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #333333;
+    margin: 4px;
+    border: 1px solid #EBEBEB;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 5px 15px;
+}
+.typelist__li.active,
+.typelist__li:hover {
+    color: #fff;
+    background: #333333;
+    transition: .2s all;
+    border: 1px solid #333333;
+}
+.fireworklist {
+    margin: 0px 0px 40px 0px;
+}
+.panel {
+    margin: 0px 0px 24px 0px;
+}
+.panel__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.panel__title {
+    margin: 0px 0px 0px 0px;
+}
+.control {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+ul.control__ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0px 8px 0px 0px;
+    border: 1px solid rgb(51 51 51 / 10%);
+    border-radius: 8px;
+}
+.control__label-item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #333333;
+    border-radius: 4px;
+    padding: 6px 16px;
+    margin: 4px;
+    cursor: pointer;
+}
+.control__label-item.active,
+.control__label-item:hover {
+    color: #fff;
+    background: #333333;
+    transition: .2s all;
+}
+ul.control__view-ul {
+    border: 1px solid rgb(51 51 51 / 10%);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.control__view-item {
+    width: 37px;
+    height: 44px;
+    cursor: pointer;
+    padding: 5px 6px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.control__view-item.active svg g {
+    opacity: 1;
+}
+.catalog__inn {}
+.catalog__list {
+}
+.product {
+}
+.product__inn {
+}
+.product__main {
+}
+.product__high {
+}
+.product__high-name {
+}
+.product__high-like {
+}
+.product__wrimage {
+}
+.product__img {
+}
+.product__lebels {
+}
+.product__lebels-item {
+}
+.product__details {
+}
+.product__grab {
+}
+.product__vendor {
+}
+.product__label {
+}
+.product__title {
+}
+.product__mates {
+}
+.product__rating {
+}
+.product__rating-numb {
+}
+.product__rating-rate {
+}
+.product__store {
+}
+.product__feature {
+}
+.product__feature-line {
+}
+.product__feature-name {
+}
+.product__feature-numb {
+}
+.product__price {
+}
+.product__price-cross {
+}
+.product__price-main {
+}
+.product__action {
+}
+.product__action-numeric {
+}
+.product__action-minus {
+}
+.product__action-chislo {
+}
+.product__action-plus {
+}
+.product__action-basket {
+}
+.catalog__breadcrumbs {
+}
+.catalog__breadcrumbs-ul {
+}
+.catalog__breadcrumbs-li {
+}
+.catalog__breadcrumbs-link {
+}
+.catalog__breadcrumbs--arrow {
+}
+.catalog__breadcrumbs--right {
+}
+/* Catalog END */
 
 
 
