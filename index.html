@@ -280,13 +280,24 @@
 				<div class="catalog__inner">
 					<div class="sidebar">
 						<div class="sidebar__section">
-							<div class="sidebar__main-tlt sidebar__main-tlt--catalog">Каталог</div>
+							<div class="sidebar__main-tlt sidebar__main-tlt--catalog active">
+								<span>Каталог</span>
+								<div class="sidebar__main-tlt-arrow">
+									<svg width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M3 4L0 0H6L3 4Z" fill="#333333"/>
+									</svg>
+								</div>
+							</div>
 							<div class="sidebar__content">
 								<ul class="sidebar__content-ul">
-									<li class="sidebar__content-li">
+									<li class="sidebar__content-li active">
 										<a class="sidebar__content-link" href="#">
 											<span class="sidebar__content-name">Батареи салютов</span>
-											<span class="sidebar__content-arrow"></span>
+											<span class="sidebar__content-arrow">
+												<svg width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M3 4L0 0H6L3 4Z" fill="#333333"/>
+												</svg>
+											</span>
 										</a>
 										<ul>
 											<li><a href="#">Катюши</a></li>
@@ -350,7 +361,14 @@
 						</div>
 
 						<div class="sidebar__section">
-							<div class="sidebar__main-tlt sidebar__main-tlt--filter">Фильтр</div>
+							<div class="sidebar__main-tlt sidebar__main-tlt--filter">
+								<span>Фильтр</span>
+								<div class="sidebar__main-tlt-arrow">
+									<svg width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M3 4L0 0H6L3 4Z" fill="#333333"/>
+									</svg>
+								</div>
+							</div>
 							<form class="sidebar__content">
 								<div class="sidebar__part sidebar__part--one">
 									<div class="sidebar__line">
@@ -621,21 +639,25 @@
 
 						 <div class="catalog__inn">
 						 	<div class="catalog__list">
-						 		<div class="product">
+						 		<div class="product catalog__list-product">
 						 			<div class="product__inn">
 						 				<div class="product__main">
 						 					<div class="product__high">
 						 						<a class="product__high-name" href="#">Летающие и наземные фейерверки</a>
-						 						<div class="product__high-like"></div>
+						 						<div class="product__high-like">
+						 							<svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M7.00033 12.833C7.00033 12.833 1.16699 9.4921 1.16699 5.43528C1.16711 4.71826 1.41004 4.02341 1.85448 3.46887C2.29891 2.91433 2.91742 2.53433 3.60485 2.39347C4.29228 2.25262 5.00619 2.3596 5.62521 2.69624C6.24422 3.03287 6.73014 3.57838 7.00033 4.24001L7.00032 4.24002C7.27051 3.57838 7.75642 3.03288 8.37544 2.69624C8.99446 2.3596 9.70837 2.25262 10.3958 2.39347C11.0832 2.53433 11.7017 2.91433 12.1462 3.46887C12.5906 4.02341 12.8335 4.71826 12.8337 5.43528C12.8337 9.4921 7.00033 12.833 7.00033 12.833Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+													</svg>
+						 						</div>
 						 					</div>
 						 					<a class="product__wrimage" href="#">
 						 						<img class="product__img" src="images/pics/list-product-1.png" alt="">
+							 					<div class="product__lebels">
+							 						<div class="product__lebels-item">Загородный отдых</div>
+							 						<div class="product__lebels-item">На свадьбу</div>
+							 						<div class="product__lebels-item">Детский праздник</div>
+							 					</div>
 						 					</a>
-						 					<div class="product__lebels">
-						 						<div class="product__lebels-item">Загородный отдых</div>
-						 						<div class="product__lebels-item">На свадьбу</div>
-						 						<div class="product__lebels-item">Детский праздник</div>
-						 					</div>
 						 				</div>
 
 						 				<div class="product__details">
@@ -647,7 +669,7 @@
 						 					<div class="product__mates">
 						 						<a class="product__rating" href="#">
 						 							<span class="product__rating-numb">3.0</span>, 
-						 							<div class="product__rating-rate">2</div> оценки
+						 							<span class="product__rating-rate">2</span> оценки
 						 						</a>
 						 						<div class="product__store">
 						 							<span>12</span> шт. в наличие
@@ -672,7 +694,7 @@
 					 								<span>980</span> ₽
 					 							</div>
 					 							<div class="product__price-main">
-					 								<strong>720</strong> ₽ / шт.
+					 								<strong>720</strong> ₽ <span>/ шт.</span>
 					 							</div>
 					 						</div>
 					 						<div class="product__action">
