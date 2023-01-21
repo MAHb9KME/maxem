@@ -469,7 +469,25 @@ $(function(){
 		$('.catalog-custom__wrselect').removeClass('active')
 	})
 
+	// Раскрытие всех категорий в списке каталога, на изображении
+	$(document).on('click', '.v-product__labels-item--action', function()
+	{
+		$(this).parents('.v-product__labels').addClass('active')
+		$(this).parents('.v-product__labels').find('.v-product__labels-item').removeClass('hide')
+		$(this).addClass('hide')
+	})
 
+	// Выбор представления списка товаров
+	$(document).on('click', '.control__view-item', function()
+	{
+		point = $(this).data('change')
+		
+		$('.control__view-item').removeClass('active')
+		$(this).addClass('active')
+
+		$('.catalog__tab').removeClass('active')
+		$('.'+point).addClass('active')
+	})
 
 
 
