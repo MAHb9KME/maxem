@@ -251,7 +251,7 @@
 						<div class="main-slider__aside">
 							<div class="container">
 								<div class="main-slider__asd">
-									<div class="title main-slider__title">The great firework way</div>
+									<div class="title main-slider__title">The great firework way 2</div>
 									<div class="main-slider__control">
 										<a class="main-slider__btn btn btn--white" href="#">Выбрать фейерверк</a>
 										<div class="main-slider__arrows">
@@ -274,13 +274,26 @@
 		</div>
 		<!-- Main Slider END -->
 
+		<!-- Поиск START -->
+		<div class="l-search">
+			<div class="container">
+				<div class="l-search__inner">
+					<form class="l-search__form" action="">
+						<input class="l-search__form-inp" type="text" placeholder="Поиск по сайту">
+						<input class="l-search__form-submit" type="submit">
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- Поиск END -->
+
 		<!-- Catalog START -->
 		<div class="catalog">
 			<div class="container">
 				<div class="catalog__inner">
 					<div class="sidebar">
 						<div class="sidebar__section">
-							<div class="sidebar__main-tlt sidebar__main-tlt--catalog active">
+							<div class="sidebar__main-tlt sidebar__main-tlt--catalog">
 								<span>Каталог</span>
 								<div class="sidebar__main-tlt-arrow">
 									<svg width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -360,7 +373,7 @@
 							</div>
 						</div>
 
-						<div class="sidebar__section">
+						<div class="sidebar__section active">
 							<div class="sidebar__main-tlt sidebar__main-tlt--filter">
 								<span>Фильтр</span>
 								<div class="sidebar__main-tlt-arrow">
@@ -375,7 +388,14 @@
 										<div class="sidebar__line-name">Наши предложения</div>
 										<div class="sidebar__focus selection">
 											<input class="sidebar__selection-input hide" type="text">
-											<div class="sidebar__selected">Выберите тип продукции</div>
+											<div class="sidebar__selected">
+												<div class="sidebar__selected-type">Выберите тип продукции</div>
+												<div class="sidebar__main-tlt-arrow sidebar__selected-arrow">
+													<svg width="6" height="4" viewBox="0 0 6 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M3 4L0 0H6L3 4Z" fill="#333333"></path>
+													</svg>
+												</div>
+											</div>
 											<ul class="sidebar__selection-ul">
 												<li class="sidebar__selection-li">Продукция 1</li>
 												<li class="sidebar__selection-li">Продукция 2</li>
@@ -399,6 +419,7 @@
 														<div class="sidebar__half-rub">₽</div>
 													</div>
 												</div>
+												<div class="sidebar__drug"></div>
 											</div>
 										</div>
 									</div>
@@ -417,6 +438,7 @@
 														<div class="sidebar__half-rub">шт.</div>
 													</div>
 												</div>
+												<div class="sidebar__drug"></div>
 											</div>
 										</div>
 									</div>
@@ -435,6 +457,7 @@
 														<div class="sidebar__half-rub">сек.</div>
 													</div>
 												</div>
+												<div class="sidebar__drug"></div>
 											</div>
 										</div>
 									</div>
@@ -456,11 +479,14 @@
 														<div class="sidebar__half-rub">шт.</div>
 													</div>
 												</div>
+												<div class="sidebar__drug"></div>
 											</div>
 										</div>
 									</div>
 
-									<div class="sidebar__line alot">
+									<div class="sidebar__filter-more">Расширенный фильтр</div>
+
+									<div class="sidebar__line effect">
 										<div class="alot__header">
 											<div class="sidebar__line-name">Кол-во эффектов</div>
 											<div class="alot__header-selectall">Выбрать все</div>
@@ -470,40 +496,40 @@
 											<div class="sidebar__wrapper">
 												<div class="sidebar__alot">
 													<div class="sidebar__alot-item">
-														<input class="sidebar__alot-input" type="checkbox" id="checkbox-alot__01">
-														<label class="sidebar__alot-label" for="checkbox-event__01">0,6</label>
+														<input class="sidebar__alot-input" type="checkbox" id="effect__01">
+														<label class="sidebar__alot-label" for="effect__01">0,6</label>
 													</div>
 													<div class="sidebar__alot-item">
-														<input class="sidebar__alot-input" type="checkbox" id="checkbox-alot__02">
-														<label class="sidebar__alot-label" for="checkbox-event__02">0,8</label>
+														<input class="sidebar__alot-input" type="checkbox" id="effect__02">
+														<label class="sidebar__alot-label" for="effect__02">0,8</label>
 													</div>
 													<div class="sidebar__alot-item">
-														<input class="sidebar__alot-input" type="checkbox" id="checkbox-alot__03">
-														<label class="sidebar__alot-label" for="checkbox-event__03">1,0</label>
+														<input class="sidebar__alot-input" type="checkbox" id="effect__03">
+														<label class="sidebar__alot-label" for="effect__03">1,0</label>
 													</div>
 													<div class="sidebar__alot-item">
-														<input class="sidebar__alot-input" type="checkbox" id="checkbox-alot__04">
-														<label class="sidebar__alot-label" for="checkbox-event__04">1,2</label>
+														<input class="sidebar__alot-input" type="checkbox" id="effect__04">
+														<label class="sidebar__alot-label" for="effect__04">1,2</label>
 													</div>
 													<div class="sidebar__alot-item">
-														<input class="sidebar__alot-input" type="checkbox" id="checkbox-alot__05">
-														<label class="sidebar__alot-label" for="checkbox-event__05">1,5</label>
+														<input class="sidebar__alot-input" type="checkbox" id="effect__05">
+														<label class="sidebar__alot-label" for="effect__05">1,5</label>
 													</div>
 													<div class="sidebar__alot-item">
-														<input class="sidebar__alot-input" type="checkbox" id="checkbox-alot__06">
-														<label class="sidebar__alot-label" for="checkbox-event__06">1,8</label>
+														<input class="sidebar__alot-input" type="checkbox" id="effect__06">
+														<label class="sidebar__alot-label" for="effect__06">1,8</label>
 													</div>
 													<div class="sidebar__alot-item">
-														<input class="sidebar__alot-input" type="checkbox" id="checkbox-alot__07">
-														<label class="sidebar__alot-label" for="checkbox-event__07">2,0</label>
+														<input class="sidebar__alot-input" type="checkbox" id="effect__07">
+														<label class="sidebar__alot-label" for="effect__07">2,0</label>
 													</div>
 													<div class="sidebar__alot-item">
-														<input class="sidebar__alot-input" type="checkbox" id="checkbox-alot__08">
-														<label class="sidebar__alot-label" for="checkbox-event__08">2,5</label>
+														<input class="sidebar__alot-input" type="checkbox" id="effect__08">
+														<label class="sidebar__alot-label" for="effect__08">2,5</label>
 													</div>
 													<div class="sidebar__alot-item">
-														<input class="sidebar__alot-input" type="checkbox" id="checkbox-alot__09">
-														<label class="sidebar__alot-label" for="checkbox-event__09">3</label>
+														<input class="sidebar__alot-input" type="checkbox" id="effect__09">
+														<label class="sidebar__alot-label" for="effect__09">3</label>
 													</div>
 												</div>
 											</div>
@@ -519,23 +545,23 @@
 											</div>
 											<div class="sidebar__alist-item">
 												<input class="sidebar__alist-input" type="checkbox" id="checkbox-event__02">
-												<label class="sidebar__alist-label" for="checkbox-event__01">Детский праздник</label>
+												<label class="sidebar__alist-label" for="checkbox-event__02">Детский праздник</label>
 											</div>
 											<div class="sidebar__alist-item">
 												<input class="sidebar__alist-input" type="checkbox" id="checkbox-event__03">
-												<label class="sidebar__alist-label" for="checkbox-event__01">Новый год</label>
+												<label class="sidebar__alist-label" for="checkbox-event__03">Новый год</label>
 											</div>
 											<div class="sidebar__alist-item">
 												<input class="sidebar__alist-input" type="checkbox" id="checkbox-event__04">
-												<label class="sidebar__alist-label" for="checkbox-event__01">Загородный отдых</label>
+												<label class="sidebar__alist-label" for="checkbox-event__04">Загородный отдых</label>
 											</div>
 											<div class="sidebar__alist-item">
 												<input class="sidebar__alist-input" type="checkbox" id="checkbox-event__05">
-												<label class="sidebar__alist-label" for="checkbox-event__01">Свадьба</label>
+												<label class="sidebar__alist-label" for="checkbox-event__05">Свадьба</label>
 											</div>
 											<div class="sidebar__alist-item">
 												<input class="sidebar__alist-input" type="checkbox" id="checkbox-event__06">
-												<label class="sidebar__alist-label" for="checkbox-event__01">На Корпоратив</label>
+												<label class="sidebar__alist-label" for="checkbox-event__06">На Корпоратив</label>
 											</div>
 										</div>
 									</div>
@@ -544,32 +570,30 @@
 										<div class="sidebar__line-name">Особенности</div>
 										<div class="sidebar__focus sidebar__alist">
 											<div class="sidebar__alist-item">
-												<input class="sidebar__alist-input" type="checkbox" id="checkbox-special__01">
-												<label class="sidebar__alist-label" for="checkbox-special__01">Веерные</label>
+												<input class="sidebar__alist-input" type="checkbox" id="checkbox-special__07">
+												<label class="sidebar__alist-label" for="checkbox-special__07">Веерные</label>
 											</div>
 											<div class="sidebar__alist-item">
-												<input class="sidebar__alist-input" type="checkbox" id="checkbox-special__02">
-												<label class="sidebar__alist-label" for="checkbox-special__01">Разнокалиберные</label>
+												<input class="sidebar__alist-input" type="checkbox" id="checkbox-special__08">
+												<label class="sidebar__alist-label" for="checkbox-special__08">Разнокалиберные</label>
 											</div>
 											<div class="sidebar__alist-item">
-												<input class="sidebar__alist-input" type="checkbox" id="checkbox-special__03">
-												<label class="sidebar__alist-label" for="checkbox-special__01">С фонтаном</label>
+												<input class="sidebar__alist-input" type="checkbox" id="checkbox-special__09">
+												<label class="sidebar__alist-label" for="checkbox-special__09">С фонтаном</label>
 											</div>
 											<div class="sidebar__alist-item">
-												<input class="sidebar__alist-input" type="checkbox" id="checkbox-special__04">
-												<label class="sidebar__alist-label" for="checkbox-special__01">Со свистом</label>
+												<input class="sidebar__alist-input" type="checkbox" id="checkbox-special__10">
+												<label class="sidebar__alist-label" for="checkbox-special__10">Со свистом</label>
 											</div>
 										</div>
 									</div>
 
 
-									<div class="sidebar__btn-more btn">Показать <p>32</p></div>
+									<div class="sidebar__btn-more btn">Показать <span>32</span></div>
 									<div class="sidebar__btn-reset">
 										<span>Сбросить фильтр</span>
 									</div>
 								</div>
-
-								<div class="sidebar__filter-more">Расширенный фильтр</div>
 							</form>
 						</div>
 
@@ -637,14 +661,31 @@
 							</div>
 						</div>
 
-						 <div class="catalog__inn">
+						<div class="catalog-custom">
+							<div class="catalog-custom__stoke">
+								<div class="catalog-custom__stoke-line">
+									<input type="checkbox" name="catalog-stoke" id="catalog-stoke">
+									<label class="catalog-custom__label" for="catalog-stoke">Только в наличии</label>
+								</div>
+							</div>
+							<div class="catalog-custom__wrselect">
+								<div class="catalog-custom__name">по популярности</div>
+								<ul class="catalog-custom__ul">
+									<li class="catalog-custom__li">по популярности</li>
+									<li class="catalog-custom__li">по цене</li>
+									<li class="catalog-custom__li">по возрастанию</li>
+								</ul>
+							</div>
+						</div>
+
+					 	<div class="catalog__inn">
 						 	<div class="catalog__list">
 						 		<div class="product catalog__list-product">
 						 			<div class="product__inn">
 						 				<div class="product__main">
 						 					<div class="product__high">
 						 						<a class="product__high-name" href="#">Летающие и наземные фейерверки</a>
-						 						<div class="product__high-like">
+						 						<div class="product__high-like active">
 						 							<svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 														<path d="M7.00033 12.833C7.00033 12.833 1.16699 9.4921 1.16699 5.43528C1.16711 4.71826 1.41004 4.02341 1.85448 3.46887C2.29891 2.91433 2.91742 2.53433 3.60485 2.39347C4.29228 2.25262 5.00619 2.3596 5.62521 2.69624C6.24422 3.03287 6.73014 3.57838 7.00033 4.24001L7.00032 4.24002C7.27051 3.57838 7.75642 3.03288 8.37544 2.69624C8.99446 2.3596 9.70837 2.25262 10.3958 2.39347C11.0832 2.53433 11.7017 2.91433 12.1462 3.46887C12.5906 4.02341 12.8335 4.71826 12.8337 5.43528C12.8337 9.4921 7.00033 12.833 7.00033 12.833Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 													</svg>
@@ -667,7 +708,7 @@
 						 					</div>
 						 					<a class="product__title" href="#">Mars City</a>
 						 					<div class="product__mates">
-						 						<a class="product__rating" href="#">
+						 						<a class="product__rating active" href="#">
 						 							<span class="product__rating-numb">3.0</span>, 
 						 							<span class="product__rating-rate">2</span> оценки
 						 						</a>
@@ -699,11 +740,433 @@
 					 						</div>
 					 						<div class="product__action">
 				 								<form class="product__action-numeric">
-						                            <span class="product__action-minus"> - </span>
+						                            <span class="product__action-minus">
+						                            	<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M1.875 6H10.125" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+														</svg>
+						                            </span>
 						                            <input class="product__action-chislo" type="text" value="1" name="chislos" tabindex="0">
-						                            <span class="product__action-plus"> + </span>
+						                            <span class="product__action-plus">
+														<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M1.875 6H10.125" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+															<path d="M6 1.875V10.125" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+														</svg>
+						                            </span>
 						                        </form>
-					 							<a class="product__action-basket" href="#"></a>
+					 							<a class="product__action-basket" href="#">
+					 								<svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M11 7H6M6 7H1L2.5822 16.4932C2.82329 17.9398 4.07486 19 5.54138 19H16.4586C17.9251 19 19.1767 17.9398 19.4178 16.4932L21 7H16V6C16 3.23858 13.7614 1 11 1V1C8.23858 1 6 3.23858 6 6V7Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+													</svg>
+					 							</a>
+					 						</div>
+						 				</div>
+						 			</div>
+						 		</div>
+
+						 		<div class="product catalog__list-product">
+						 			<div class="product__inn">
+						 				<div class="product__main">
+						 					<div class="product__high">
+						 						<a class="product__high-name" href="#">Летающие и наземные фейерверки</a>
+						 						<div class="product__high-like active">
+						 							<svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M7.00033 12.833C7.00033 12.833 1.16699 9.4921 1.16699 5.43528C1.16711 4.71826 1.41004 4.02341 1.85448 3.46887C2.29891 2.91433 2.91742 2.53433 3.60485 2.39347C4.29228 2.25262 5.00619 2.3596 5.62521 2.69624C6.24422 3.03287 6.73014 3.57838 7.00033 4.24001L7.00032 4.24002C7.27051 3.57838 7.75642 3.03288 8.37544 2.69624C8.99446 2.3596 9.70837 2.25262 10.3958 2.39347C11.0832 2.53433 11.7017 2.91433 12.1462 3.46887C12.5906 4.02341 12.8335 4.71826 12.8337 5.43528C12.8337 9.4921 7.00033 12.833 7.00033 12.833Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+													</svg>
+						 						</div>
+						 					</div>
+						 					<a class="product__wrimage" href="#">
+						 						<img class="product__img" src="images/pics/list-product-2.png" alt="">
+							 					<div class="product__lebels">
+							 						<div class="product__lebels-item">На свадьбу</div>
+							 						<div class="product__lebels-item">Детский праздник</div>
+							 					</div>
+						 					</a>
+						 				</div>
+
+						 				<div class="product__details">
+						 					<div class="product__grab">
+						 						<div class="product__vendor">GW218-96</div>
+						 						<div class="product__label product__label--hit">Хит продаж</div>
+						 					</div>
+						 					<a class="product__title" href="#">Flower</a>
+						 					<div class="product__mates">
+						 						<a class="product__rating active" href="#">
+						 							<span class="product__rating-numb">3.0</span>, 
+						 							<span class="product__rating-rate">2</span> оценки
+						 						</a>
+						 						<div class="product__store">
+						 							<span>12</span> шт. в наличие
+						 						</div>
+					 						</div>
+					 						<div class="product__feature">
+					 							<div class="product__feature-line">
+					 								<div class="product__feature-name">Кол-во запалов</div>
+					 								<div class="product__feature-numb">10</div>
+					 							</div>
+					 							<div class="product__feature-line">
+					 								<div class="product__feature-name">Длительность</div>
+					 								<div class="product__feature-numb">22</div>
+					 							</div>
+					 							<div class="product__feature-line">
+					 								<div class="product__feature-name">Калибр</div>
+					 								<div class="product__feature-numb">0’8”</div>
+					 							</div>
+					 						</div>
+					 						<div class="product__price">
+					 							<div class="product__price-cross">
+					 								<span>980</span> ₽
+					 							</div>
+					 							<div class="product__price-main">
+					 								<strong>720</strong> ₽ <span>/ шт.</span>
+					 							</div>
+					 						</div>
+					 						<div class="product__action">
+				 								<form class="product__action-numeric">
+						                            <span class="product__action-minus">
+						                            	<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M1.875 6H10.125" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+														</svg>
+						                            </span>
+						                            <input class="product__action-chislo" type="text" value="1" name="chislos" tabindex="0">
+						                            <span class="product__action-plus">
+														<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M1.875 6H10.125" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+															<path d="M6 1.875V10.125" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+														</svg>
+						                            </span>
+						                        </form>
+					 							<a class="product__action-basket" href="#">
+					 								<svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M11 7H6M6 7H1L2.5822 16.4932C2.82329 17.9398 4.07486 19 5.54138 19H16.4586C17.9251 19 19.1767 17.9398 19.4178 16.4932L21 7H16V6C16 3.23858 13.7614 1 11 1V1C8.23858 1 6 3.23858 6 6V7Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+													</svg>
+					 							</a>
+					 						</div>
+						 				</div>
+						 			</div>
+						 		</div>
+
+						 		<div class="product catalog__list-product">
+						 			<div class="product__inn">
+						 				<div class="product__main">
+						 					<div class="product__high">
+						 						<a class="product__high-name" href="#">Летающие и наземные фейерверки</a>
+						 						<div class="product__high-like">
+						 							<svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M7.00033 12.833C7.00033 12.833 1.16699 9.4921 1.16699 5.43528C1.16711 4.71826 1.41004 4.02341 1.85448 3.46887C2.29891 2.91433 2.91742 2.53433 3.60485 2.39347C4.29228 2.25262 5.00619 2.3596 5.62521 2.69624C6.24422 3.03287 6.73014 3.57838 7.00033 4.24001L7.00032 4.24002C7.27051 3.57838 7.75642 3.03288 8.37544 2.69624C8.99446 2.3596 9.70837 2.25262 10.3958 2.39347C11.0832 2.53433 11.7017 2.91433 12.1462 3.46887C12.5906 4.02341 12.8335 4.71826 12.8337 5.43528C12.8337 9.4921 7.00033 12.833 7.00033 12.833Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+													</svg>
+						 						</div>
+						 					</div>
+						 					<a class="product__wrimage" href="#">
+						 						<img class="product__img" src="images/pics/list-product-3.png" alt="">
+							 					<div class="product__lebels">
+							 						<div class="product__lebels-item">На свадьбу</div>
+							 					</div>
+						 					</a>
+						 				</div>
+
+						 				<div class="product__details">
+						 					<div class="product__grab">
+						 						<div class="product__vendor">GW218-96</div>
+						 						<div class="product__label product__label--newdes">Новый дизайн</div>
+						 					</div>
+						 					<a class="product__title" href="#">Lion</a>
+						 					<div class="product__mates">
+						 						<a class="product__rating" href="#">
+						 							<span class="product__rating-numb">0.0</span>, 
+						 							<span class="product__rating-rate">0</span> оценок
+						 						</a>
+						 						<div class="product__store">
+						 							<span>12</span> шт. в наличие
+						 						</div>
+					 						</div>
+					 						<div class="product__feature">
+					 							<div class="product__feature-line">
+					 								<div class="product__feature-name">Кол-во запалов</div>
+					 								<div class="product__feature-numb">10</div>
+					 							</div>
+					 							<div class="product__feature-line">
+					 								<div class="product__feature-name">Длительность</div>
+					 								<div class="product__feature-numb">22</div>
+					 							</div>
+					 							<div class="product__feature-line">
+					 								<div class="product__feature-name">Калибр</div>
+					 								<div class="product__feature-numb">0’8”</div>
+					 							</div>
+					 						</div>
+					 						<div class="product__price">
+					 							<div class="product__price-cross">
+					 								<span>980</span> ₽
+					 							</div>
+					 							<div class="product__price-main">
+					 								<strong>720</strong> ₽ <span>/ шт.</span>
+					 							</div>
+					 						</div>
+					 						<div class="product__action">
+				 								<form class="product__action-numeric">
+						                            <span class="product__action-minus">
+						                            	<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M1.875 6H10.125" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+														</svg>
+						                            </span>
+						                            <input class="product__action-chislo" type="text" value="1" name="chislos" tabindex="0">
+						                            <span class="product__action-plus">
+														<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M1.875 6H10.125" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+															<path d="M6 1.875V10.125" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+														</svg>
+						                            </span>
+						                        </form>
+					 							<a class="product__action-basket" href="#">
+					 								<svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M11 7H6M6 7H1L2.5822 16.4932C2.82329 17.9398 4.07486 19 5.54138 19H16.4586C17.9251 19 19.1767 17.9398 19.4178 16.4932L21 7H16V6C16 3.23858 13.7614 1 11 1V1C8.23858 1 6 3.23858 6 6V7Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+													</svg>
+					 							</a>
+					 						</div>
+						 				</div>
+						 			</div>
+						 		</div>
+
+						 		<div class="product catalog__list-product">
+						 			<div class="product__inn">
+						 				<div class="product__main">
+						 					<div class="product__high">
+						 						<a class="product__high-name" href="#">Летающие и наземные фейерверки</a>
+						 						<div class="product__high-like">
+						 							<svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M7.00033 12.833C7.00033 12.833 1.16699 9.4921 1.16699 5.43528C1.16711 4.71826 1.41004 4.02341 1.85448 3.46887C2.29891 2.91433 2.91742 2.53433 3.60485 2.39347C4.29228 2.25262 5.00619 2.3596 5.62521 2.69624C6.24422 3.03287 6.73014 3.57838 7.00033 4.24001L7.00032 4.24002C7.27051 3.57838 7.75642 3.03288 8.37544 2.69624C8.99446 2.3596 9.70837 2.25262 10.3958 2.39347C11.0832 2.53433 11.7017 2.91433 12.1462 3.46887C12.5906 4.02341 12.8335 4.71826 12.8337 5.43528C12.8337 9.4921 7.00033 12.833 7.00033 12.833Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+													</svg>
+						 						</div>
+						 					</div>
+						 					<a class="product__wrimage" href="#">
+						 						<img class="product__img" src="images/pics/list-product-3.png" alt="">
+							 					<div class="product__lebels">
+							 						<div class="product__lebels-item">На свадьбу</div>
+							 					</div>
+						 					</a>
+						 				</div>
+
+						 				<div class="product__details">
+						 					<div class="product__grab">
+						 						<div class="product__vendor">GW218-96</div>
+						 						<div class="product__label product__label--newdes">Новый дизайн</div>
+						 					</div>
+						 					<a class="product__title" href="#">Lion</a>
+						 					<div class="product__mates">
+						 						<a class="product__rating" href="#">
+						 							<span class="product__rating-numb">0.0</span>, 
+						 							<span class="product__rating-rate">0</span> оценок
+						 						</a>
+						 						<div class="product__store">
+						 							<span>12</span> шт. в наличие
+						 						</div>
+					 						</div>
+					 						<div class="product__feature">
+					 							<div class="product__feature-line">
+					 								<div class="product__feature-name">Кол-во запалов</div>
+					 								<div class="product__feature-numb">10</div>
+					 							</div>
+					 							<div class="product__feature-line">
+					 								<div class="product__feature-name">Длительность</div>
+					 								<div class="product__feature-numb">22</div>
+					 							</div>
+					 							<div class="product__feature-line">
+					 								<div class="product__feature-name">Калибр</div>
+					 								<div class="product__feature-numb">0’8”</div>
+					 							</div>
+					 						</div>
+					 						<div class="product__price">
+					 							<div class="product__price-cross">
+					 								<span>980</span> ₽
+					 							</div>
+					 							<div class="product__price-main">
+					 								<strong>720</strong> ₽ <span>/ шт.</span>
+					 							</div>
+					 						</div>
+					 						<div class="product__action">
+				 								<form class="product__action-numeric">
+						                            <span class="product__action-minus">
+						                            	<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M1.875 6H10.125" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+														</svg>
+						                            </span>
+						                            <input class="product__action-chislo" type="text" value="1" name="chislos" tabindex="0">
+						                            <span class="product__action-plus">
+														<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M1.875 6H10.125" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+															<path d="M6 1.875V10.125" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+														</svg>
+						                            </span>
+						                        </form>
+					 							<a class="product__action-basket" href="#">
+					 								<svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M11 7H6M6 7H1L2.5822 16.4932C2.82329 17.9398 4.07486 19 5.54138 19H16.4586C17.9251 19 19.1767 17.9398 19.4178 16.4932L21 7H16V6C16 3.23858 13.7614 1 11 1V1C8.23858 1 6 3.23858 6 6V7Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+													</svg>
+					 							</a>
+					 						</div>
+						 				</div>
+						 			</div>
+						 		</div>
+
+						 		<div class="product catalog__list-product">
+						 			<div class="product__inn">
+						 				<div class="product__main">
+						 					<div class="product__high">
+						 						<a class="product__high-name" href="#">Летающие и наземные фейерверки</a>
+						 						<div class="product__high-like">
+						 							<svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M7.00033 12.833C7.00033 12.833 1.16699 9.4921 1.16699 5.43528C1.16711 4.71826 1.41004 4.02341 1.85448 3.46887C2.29891 2.91433 2.91742 2.53433 3.60485 2.39347C4.29228 2.25262 5.00619 2.3596 5.62521 2.69624C6.24422 3.03287 6.73014 3.57838 7.00033 4.24001L7.00032 4.24002C7.27051 3.57838 7.75642 3.03288 8.37544 2.69624C8.99446 2.3596 9.70837 2.25262 10.3958 2.39347C11.0832 2.53433 11.7017 2.91433 12.1462 3.46887C12.5906 4.02341 12.8335 4.71826 12.8337 5.43528C12.8337 9.4921 7.00033 12.833 7.00033 12.833Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+													</svg>
+						 						</div>
+						 					</div>
+						 					<a class="product__wrimage" href="#">
+						 						<img class="product__img" src="images/pics/list-product-1.png" alt="">
+							 					<div class="product__lebels">
+							 						<div class="product__lebels-item">Загородный отдых</div>
+							 						<div class="product__lebels-item">На свадьбу</div>
+							 						<div class="product__lebels-item">Детский праздник</div>
+							 					</div>
+						 					</a>
+						 				</div>
+
+						 				<div class="product__details">
+						 					<div class="product__grab">
+						 						<div class="product__vendor">GW218-96</div>
+						 						<div class="product__label">Новинка</div>
+						 					</div>
+						 					<a class="product__title" href="#">Mars City</a>
+						 					<div class="product__mates">
+						 						<a class="product__rating active" href="#">
+						 							<span class="product__rating-numb">3.0</span>, 
+						 							<span class="product__rating-rate">2</span> оценки
+						 						</a>
+						 						<div class="product__store">
+						 							<span>12</span> шт. в наличие
+						 						</div>
+					 						</div>
+					 						<div class="product__feature">
+					 							<div class="product__feature-line">
+					 								<div class="product__feature-name">Кол-во запалов</div>
+					 								<div class="product__feature-numb">10</div>
+					 							</div>
+					 							<div class="product__feature-line">
+					 								<div class="product__feature-name">Длительность</div>
+					 								<div class="product__feature-numb">22</div>
+					 							</div>
+					 							<div class="product__feature-line">
+					 								<div class="product__feature-name">Калибр</div>
+					 								<div class="product__feature-numb">0’8”</div>
+					 							</div>
+					 						</div>
+					 						<div class="product__price">
+					 							<div class="product__price-cross">
+					 								<span>980</span> ₽
+					 							</div>
+					 							<div class="product__price-main">
+					 								<strong>720</strong> ₽ <span>/ шт.</span>
+					 							</div>
+					 						</div>
+					 						<div class="product__action">
+				 								<form class="product__action-numeric">
+						                            <span class="product__action-minus">
+						                            	<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M1.875 6H10.125" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+														</svg>
+						                            </span>
+						                            <input class="product__action-chislo" type="text" value="1" name="chislos" tabindex="0">
+						                            <span class="product__action-plus">
+														<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M1.875 6H10.125" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+															<path d="M6 1.875V10.125" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+														</svg>
+						                            </span>
+						                        </form>
+					 							<a class="product__action-basket" href="#">
+					 								<svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M11 7H6M6 7H1L2.5822 16.4932C2.82329 17.9398 4.07486 19 5.54138 19H16.4586C17.9251 19 19.1767 17.9398 19.4178 16.4932L21 7H16V6C16 3.23858 13.7614 1 11 1V1C8.23858 1 6 3.23858 6 6V7Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+													</svg>
+					 							</a>
+					 						</div>
+						 				</div>
+						 			</div>
+						 		</div>
+
+						 		<div class="product catalog__list-product">
+						 			<div class="product__inn">
+						 				<div class="product__main">
+						 					<div class="product__high">
+						 						<a class="product__high-name" href="#">Летающие и наземные фейерверки</a>
+						 						<div class="product__high-like">
+						 							<svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M7.00033 12.833C7.00033 12.833 1.16699 9.4921 1.16699 5.43528C1.16711 4.71826 1.41004 4.02341 1.85448 3.46887C2.29891 2.91433 2.91742 2.53433 3.60485 2.39347C4.29228 2.25262 5.00619 2.3596 5.62521 2.69624C6.24422 3.03287 6.73014 3.57838 7.00033 4.24001L7.00032 4.24002C7.27051 3.57838 7.75642 3.03288 8.37544 2.69624C8.99446 2.3596 9.70837 2.25262 10.3958 2.39347C11.0832 2.53433 11.7017 2.91433 12.1462 3.46887C12.5906 4.02341 12.8335 4.71826 12.8337 5.43528C12.8337 9.4921 7.00033 12.833 7.00033 12.833Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+													</svg>
+						 						</div>
+						 					</div>
+						 					<a class="product__wrimage" href="#">
+						 						<img class="product__img" src="images/pics/list-product-2.png" alt="">
+							 					<div class="product__lebels">
+							 						<div class="product__lebels-item">На свадьбу</div>
+							 						<div class="product__lebels-item">Детский праздник</div>
+							 					</div>
+						 					</a>
+						 				</div>
+
+						 				<div class="product__details">
+						 					<div class="product__grab">
+						 						<div class="product__vendor">GW218-96</div>
+						 						<div class="product__label product__label--hit">Хит продаж</div>
+						 					</div>
+						 					<a class="product__title" href="#">Flower</a>
+						 					<div class="product__mates">
+						 						<a class="product__rating active" href="#">
+						 							<span class="product__rating-numb">3.0</span>, 
+						 							<span class="product__rating-rate">2</span> оценки
+						 						</a>
+						 						<div class="product__store">
+						 							<span>12</span> шт. в наличие
+						 						</div>
+					 						</div>
+					 						<div class="product__feature">
+					 							<div class="product__feature-line">
+					 								<div class="product__feature-name">Кол-во запалов</div>
+					 								<div class="product__feature-numb">10</div>
+					 							</div>
+					 							<div class="product__feature-line">
+					 								<div class="product__feature-name">Длительность</div>
+					 								<div class="product__feature-numb">22</div>
+					 							</div>
+					 							<div class="product__feature-line">
+					 								<div class="product__feature-name">Калибр</div>
+					 								<div class="product__feature-numb">0’8”</div>
+					 							</div>
+					 						</div>
+					 						<div class="product__price">
+					 							<div class="product__price-cross">
+					 								<span>980</span> ₽
+					 							</div>
+					 							<div class="product__price-main">
+					 								<strong>720</strong> ₽ <span>/ шт.</span>
+					 							</div>
+					 						</div>
+					 						<div class="product__action">
+				 								<form class="product__action-numeric">
+						                            <span class="product__action-minus">
+						                            	<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M1.875 6H10.125" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+														</svg>
+						                            </span>
+						                            <input class="product__action-chislo" type="text" value="1" name="chislos" tabindex="0">
+						                            <span class="product__action-plus">
+														<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M1.875 6H10.125" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+															<path d="M6 1.875V10.125" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+														</svg>
+						                            </span>
+						                        </form>
+					 							<a class="product__action-basket" href="#">
+					 								<svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M11 7H6M6 7H1L2.5822 16.4932C2.82329 17.9398 4.07486 19 5.54138 19H16.4586C17.9251 19 19.1767 17.9398 19.4178 16.4932L21 7H16V6C16 3.23858 13.7614 1 11 1V1C8.23858 1 6 3.23858 6 6V7Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+													</svg>
+					 							</a>
 					 						</div>
 						 				</div>
 						 			</div>
@@ -712,7 +1175,7 @@
 						 	</div>
 						 	<div class="catalog__breadcrumbs">
 						 		<ul class="catalog__breadcrumbs-ul">
-						 			<li class="catalog__breadcrumbs-li">
+						 			<li class="catalog__breadcrumbs-li active">
 						 				<a class="catalog__breadcrumbs-link" href="#">1</a>
 						 			</li>
 						 			<li class="catalog__breadcrumbs-li">
@@ -737,10 +1200,167 @@
 		</div>
 		<!-- Catalog END -->
 
-	
+		<!-- Максем описание START -->
+		<div class="c-maxem c-maxem--tune">
+			<div class="container">
+				<div class="c-maxem__inner">
+					<h1 class="c-maxem__title title">Компания Maxsem — один из лидеров оптовой продажи пиротехники</h1>
+					<div class="c-maxem__desc">
+						<div class="c-maxem__image">
+							<img class="c-maxem__img" src="images/pics/small-map.png" alt="">
+						</div>
+						<div class="c-maxem__txt">Где купить фейерверки оптом? В пиротехнической компании Maxsem оптом можно купить весь ассортимент бытовой пиротехники 1-2-3 класса опасности. Продажа фейерверков от производителя Maxsem по низким ценам с недорогой доставкой по России.</div>
+						<div class="c-maxem__actions">
+							<a class="c-maxem__btn btn" href="#">Узнать условия</a>
+							<a class="c-maxem__download" href="#">
+								<span class="c-maxem__download-icon">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12 13V5" stroke="#333333" stroke-width="2" stroke-linecap="round"/>
+										<path d="M9 11L12 14L15 11" stroke="#333333" stroke-width="2" stroke-linecap="round"/>
+										<path d="M4.5 13V18H19.5V13" stroke="#333333" stroke-width="2" stroke-linecap="round"/>
+									</svg>
+								</span>
+								<span class="c-maxem__download-ahead">
+									<span class="c-maxem__download-tlt">Скачать каталог продукции</span>
+									<span class="c-maxem__download-file">4 мб, pdf</span>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Максем описание END -->
 
+		<!-- Блог START -->
+		<div class="blog">
+			<div class="container">
+				<div class="blog__inner">
+					<div class="blog__ahead">
+						<div class="blog__ahead-tlt">Наш пиротехнический блог с новостями, лайфхаками, обзорами и массой интересной информации </div>
+						<div class="blog__ahead-btn btn">Читать блог</div>
+					</div>
+					<div class="blog__cont">
+						<div class="blog__writem">
+							<a class="blog__item" href="#">
+								<span class="blog__date">31 января</span>
+								<span class="blog__txt">
+									<span class="blog__txt-tlt">Переезд магазина в Нижнем Новгороде</span>
+									<span class="blog__txt-desc">Магазин переехал по адресу пр. Ленина дом 32</span>
+								</span>
+							</a>
+						</div>
+						<div class="blog__writem">
+							<a class="blog__item" href="#">
+								<span class="blog__date">12 января</span>
+								<span class="blog__txt">
+									<span class="blog__txt-tlt">Ожидается большое поступление пиротехники</span>
+									<span class="blog__txt-desc">В сентябре 2019 в нашем каталоге появилось более 30 новых товарных позиций</span>
+								</span>
+							</a>
+						</div>
+						<div class="blog__writem">
+							<a class="blog__item" href="#">
+								<span class="blog__date">2 января</span>
+								<span class="blog__txt">
+									<span class="blog__txt-tlt">Интернет магазин пиротехники Maxsem</span>
+									<span class="blog__txt-desc">В 2019 году наша компания открывает онлайн продажи фейерверков Maxsem</span>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Блог END -->
 
-	</div>	
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__inner">
+					<div class="footer-top">
+						<div class="footer-about footer--common">
+							<div class="footer-about__logo">
+								<img class="footer-about__logo" src="images/pics/logo-white.svg" alt="">
+							</div>
+							<div class="footer-about__txt">Международная пиротехническая компания Maxsem занимается импортом бытовой пиротехники в страны СНГ и Евросоюза.</div>
+							<a class="footer-about__mail" href="mailto:zakaz@maxsem.ru">zakaz@maxsem.ru</a>
+						</div>
+						<div class="footer-contact footer--common">
+							<div class="footer-contact__line">
+								<a class="footer-contact__ph" href="tel:88005117840">8 800 511 78 40</a>
+								<div class="footer-contact__txt">Ежедневно с 10:00 до 20:00</div>
+							</div>
+							<div class="footer-contact__line">
+								<a class="footer-contact__ph" href="tel:+74954450269">+7 495 445 02 69</a>
+								<div class="footer-contact__txt">Отдел оптовых продаж</div>
+							</div>
+							<div class="footer-contact__line">
+								<a class="footer-contact__ph" href="tel:+74954450113">+7 495 445 01 13</a>
+								<div class="footer-contact__txt">Профессиональная пиротехника</div>
+							</div>
+							<a href="#" class="footer-contact__btn btn">Заказать звонок</a>
+						</div>
+						<div class="footer-nav footer--common">
+							<div class="footer-nav__top">
+								<ul class="footer-nav__top-ul">
+									<li class="footer-nav__top-li">
+										<a class="footer-nav__top-link" href="#">Доставка и оплата</a>
+									</li>
+									<li class="footer-nav__top-li">
+										<a class="footer-nav__top-link" href="#">Блог компании</a>
+									</li>
+									<li class="footer-nav__top-li">
+										<a class="footer-nav__top-link" href="#">Розничные магазины</a>
+									</li>
+								</ul>
+							</div>
+							<div class="footer-nav__bottom">
+								<ul class="footer-nav__bottom-ul">
+									<li class="footer-nav__bottom-li">
+										<a class="footer-nav__bottom-link" href="#">Петарды</a>
+									</li>
+									<li class="footer-nav__bottom-li">
+										<a class="footer-nav__bottom-link" href="#">Батареи салютов</a>
+									</li>
+									<li class="footer-nav__bottom-li">
+										<a class="footer-nav__bottom-link" href="#">Римские свечи</a>
+									</li>
+									<li class="footer-nav__bottom-li">
+										<a class="footer-nav__bottom-link" href="#">Бенгальские огни</a>
+									</li>
+									<li class="footer-nav__bottom-li">
+										<a class="footer-nav__bottom-link" href="#">Цветной дым</a>
+									</li>
+									<li class="footer-nav__bottom-li">
+										<a class="footer-nav__bottom-link" href="#">Фонтаны</a>
+									</li>
+									<li class="footer-nav__bottom-li">
+										<a class="footer-nav__bottom-link" href="#">Хлопушки</a>
+									</li>
+									<li class="footer-nav__bottom-li">
+										<a class="footer-nav__bottom-link" href="#">Ракеты</a>
+									</li>
+									<li class="footer-nav__bottom-li">
+										<a class="footer-nav__bottom-link" href="#">Фестивальные шары</a>
+									</li>
+									<li class="footer-nav__bottom-li">
+										<a class="footer-nav__bottom-link" href="#">Летающие и наземные фейерверки</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="footer-bottom">
+						<div class="footer-bottom__copyright">© Maxsem - интернет магазин фейерверков от производителя с доставкой по России</div>
+						<div class="footer-bottom__data">
+							<a class="footer-bottom__data-ident" href="#">Обработка персональных данных</a>
+							<a class="footer-bottom__data-ofert" href="#">Публичная оферта</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
 
 	<link rel="stylesheet" href="css/responsive.css" />
 	<link rel="stylesheet" href="fonts/fonts.css" />

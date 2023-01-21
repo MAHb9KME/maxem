@@ -355,6 +355,126 @@ $(function(){
 		$('body').removeClass('burger-active')
 	})
 
+	// Подсчет числа в списке товаров
+    function set_quantity(e)
+    {
+        var c = e.attr('class'),
+            input = e.parents('.product__action-numeric').find('input.product__action-chislo'),
+            v = parseInt(input.val())
+            
+        if(c == 'product__action-plus')
+            v++
+        else if(c == 'product__action-minus')
+        {
+            v--
+            if(v <= 0)
+                v = 1;
+        }
+        
+        if(v == NaN)
+            v = 1
+        
+        input.val(v)
+    }
+
+	// вызов функции
+     $('.product__action-numeric span').click(function(){
+        set_quantity($(this))
+     })
+
+	// Запрет ввода букв
+   	$(document).on('keypress', '.product__action-numeric input', function(e)
+    {
+        if (e.which != 8 && e.which != 0 && e.which != 46 && (e.which < 48 || e.which > 57))
+            return false
+    })
+
+    // sidebar выбор из выпадающего списка
+    $(document).on('click', '.sidebar__selected', function()
+	{
+		if( $('.selection').hasClass('active') )
+		{
+			$('.selection').removeClass('active')
+		}
+		else
+		{
+			$('.selection').addClass('active')
+		}
+	})
+
+	$(document).on('click', '.sidebar__selection-li', function()
+	{
+		$('.selection').removeClass('active')
+
+		product = $(this).text()
+		$('.sidebar__selected-type').text(product)
+	})
+
+	$(document).click(function(event)
+	{
+		if ($(event.target).closest(".sidebar__selected").length || $(event.target).closest(".sidebar__selection-li").length ) return;
+		event.stopPropagation();
+
+		$('.selection').removeClass('active')
+	})
+
+
+	// Фильтр и Каталог, скрытие и раскрытие меню
+    $('.sidebar__main-tlt').click(function(){
+
+        var parent = $(this).parents('.sidebar__section');
+        var menu = $(this).next();
+
+        $('.faq-content .line').removeClass('active')
+
+        if( $(menu).is(':visible'))
+        {
+            $(menu).slideUp(300)
+            $(parent).removeClass('active')
+        }
+        else
+        {
+            $('.faq-content .line .answer').slideUp(400)
+            $(menu).slideDown(300)
+            $(parent).addClass('active')
+        }
+    })
+
+    // Каталог фильтр по популярности и цене
+    $(document).on('click', '.catalog-custom__name', function()
+	{
+		if( $('.catalog-custom__wrselect').hasClass('active') )
+		{
+			$('.catalog-custom__wrselect').removeClass('active')
+		}
+		else
+		{
+			$('.catalog-custom__wrselect').addClass('active')
+		}
+	})
+
+	$(document).on('click', '.catalog-custom__li', function()
+	{
+		$('.catalog-custom__wrselect').removeClass('active')
+
+		product = $(this).text()
+		$('.sidebar__selected-type').text(product)
+	})
+
+	$(document).click(function(event)
+	{
+		if ($(event.target).closest(".catalog-custom__name").length || $(event.target).closest(".catalog-custom__li").length ) return;
+		event.stopPropagation();
+
+		$('.catalog-custom__wrselect').removeClass('active')
+	})
+
+
+
+
+
+
+
 
 
 })
