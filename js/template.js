@@ -508,10 +508,11 @@ $(function(){
 
 	// Слайдер в карточке товара мин
 	$('.p-product__thumb').slick({
-  		slidesToShow: 5,
+  		slidesToShow: 10,
   		slidesToScroll: 1,
   		arrows: false,
   		dots: false,
+      	focusOnSelect: true,
       	asNavFor: '.p-product__pic-slider'
 	});
 

@@ -80,8 +80,29 @@ ul[class] {
 
 li[class] {
     list-style-type: none;
+    /*padding: 0;*/
 }
-
+/*li[class]::before {
+    display: none;
+}*/
+/*li {
+    padding-left: 16px;
+    position: relative;
+    z-index: 1;
+}
+li:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 5px;
+    min-width: 5px;
+    height: 5px;
+    background-color: #C8A06C;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}*/
 button,
 input,
 a,
@@ -1198,17 +1219,31 @@ body.burger-active .header__wrnav {
     padding: 20px 80px;
 }
 .main-slider__title {
-    max-width: 260px;
+    max-width: 270px;
     font-weight: 500;
     font-size: 56px;
     line-height: 64px;
     color: #fff;
     margin: 0px 0px 68px 0px;
 }
+.main-slider__subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+    opacity: 0.8;
+    max-width: 192px;
+}
 .main-slider__control {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.main-slider__control--txt {
+    align-items: flex-end;
+}
+.main-slider__control--txt .main-slider__arrows {
+    margin-bottom: 4px;
 }
 .main-slider__btn {
     white-space: nowrap;
@@ -3049,7 +3084,7 @@ ul.control__view-ul {
 }
 
 .p-product {
-    padding: 24px 0;
+    padding: 24px 0 80px;
 }
 .p-product__inner {
 }
@@ -3502,7 +3537,7 @@ ul.control__view-ul {
 .faq {
 }
 .faq--tune {
-    padding: 40px 0 120px;
+    padding: 40px 0;
 }
 .faq__inner {
     display: flex;
@@ -3526,8 +3561,37 @@ ul.control__view-ul {
     opacity: 0.64;
     max-width: 240px;
 }
+.faq__subtlt ul {
+    margin: 0;
+    padding: 0;
+}
+.faq__subtlt ul li {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: rgb(51 51 51 / 65%);
+    padding-left: 16px;
+    position: relative;
+    z-index: 1;
+    list-style-type: none;
+}
+
+.faq__subtlt ul li:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 5px;
+    min-width: 5px;
+    height: 5px;
+    background-color: #C8A06C;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
 .faq__content {
-    width: 60%;
+    width: 56.667%;
 }
 .faq__item {
     border: 1px solid rgb(51 51 51 / 10%);
@@ -3593,6 +3657,31 @@ ul.control__view-ul {
     opacity: 0.64;
     padding: 0 32px 32px;
     display: none;
+}
+.faq__item-ul {
+}
+.faq__item-li {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: rgb(51 51 51 / 64%);
+    margin: 0px 0px 16px 0px;
+    padding-left: 16px;
+    position: relative;
+    z-index: 1;
+}
+.faq__item-li:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 5px;
+    min-width: 5px;
+    height: 5px;
+    background-color: #C8A06C;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 0;
 }
 .faq__item.active .faq__item-text {
     display: block;
@@ -3673,7 +3762,16 @@ ul.control__view-ul {
     opacity: 0.56;
     margin: 0px 17px 0px 0px;
 }
-.reviews__content-rating {
+.reviews__rating {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.reviews__rating-item {
+    margin: 0 0 0 3px;
+}
+.reviews__rating-item.active svg path {
+    fill: #C8A06C;
 }
 .reviews__content-bottom {
     padding-top: 24px;
@@ -3704,6 +3802,26 @@ ul.control__view-ul {
     border-bottom: 1px solid #EBEBEB;
 }
 .rating {
+    position: relative;
+    z-index: 1;
+    width: 80px;
+    height: 14px;
+    background-image: url(images/icons/star-empty-reiting.svg);
+    background-position: 0% 0%;
+    background-repeat: repeat-x;
+    background-size: 16px;
+}
+.rating__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    height: 14px;
+    background-image: url(images/icons/star-full-reiting.svg);
+    background-position: 0% 0%;
+    background-repeat: repeat-x;
+    background-size: 16px;
 }
 .reviews__numb {
     display: flex;
@@ -3713,6 +3831,7 @@ ul.control__view-ul {
     font-size: 16px;
     line-height: 36px;
     color: #333333;
+    margin: 0px 0px 0px 15px;
 }
 .reviews__numb-now {
 }
@@ -3772,3 +3891,132 @@ ul.control__view-ul {
     width: 100%;
 }
 /* Отзывы END */
+
+.common-page {
+    padding: 56px 0 80px;
+    min-height: 500px;
+}
+
+/* Преимущества START */
+.pros {
+    margin-bottom: 40px;
+}
+.pros__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 -16px;
+}
+.pros__writem {
+    width: 25%;
+    padding: 0 16px;
+}
+.pros__item {
+}
+.pros__image {
+    width: 80px;
+    height: 80px;
+    margin: 0px 0px 24px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(235 235 235 / 40%);
+}
+.pros__image path {
+}
+.pros__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #000000;
+    margin: 0px 0px 16px 0px;
+}
+.pros__subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #333333;
+    opacity: 0.64;
+    max-width: 224px;
+}
+/* Преимущества END */
+
+/* Типы оплаты START */
+.types {
+}
+.types--tune {
+    padding: 40px 0;
+}
+.types__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.types__ahead {
+    width: 40%;
+}
+.types__title {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 64px;
+    color: #333333;
+    margin: 0px 0px 24px 0px;
+}
+.types__subtlt {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #333333;
+    opacity: 0.64;
+    max-width: 240px;
+}
+.types__content {
+    width: 56.667%;
+}
+.types__vars {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0 -8px 16px;
+}
+.types__vars-writem {
+    width: 50%;
+    padding: 8px;   
+}
+.types__vars-item {
+    padding: 32px;
+    border: 1px solid rgb(51 51 51 / 10%);
+    border-radius: 8px;
+}
+.types__vars-icon {
+    margin: 0px 0px 25px 0px;
+}
+.types__vars-icon svg {
+    margin-left: -3px;
+}
+.types__vars-tlt {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    display: flex;
+    align-items: flex-end;
+    color: #333333;
+    max-width: 234px;
+}
+.types__payment {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    display: flex;
+    align-items: flex-end;
+    color: #333333;
+}
+.types__payment a {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px 0px 0px 5px;
+    color: #333333;
+    font-weight: 500;
+}
+/* Типы оплаты END */
