@@ -360,6 +360,9 @@ $(function(){
     {
         var c = e.attr('class'),
             input = e.parents('.product__action-numeric').find('input.product__action-chislo'),
+            current_pre_price = e.parents('.p-product__cust').find('.p-product__prices-strong').text(),
+            current_price = current_pre_price.replace(/\s/g, ''),
+            input_div = e.parents('.product__action-numeric').find('.p-product__action-focus'),
             v = parseInt(input.val())
             
         if(c == 'product__action-plus')
@@ -375,6 +378,11 @@ $(function(){
             v = 1
         
         input.val(v)
+        input_div.text(v)
+
+        var result = input.val() * current_price;
+
+        e.parents('.p-product__desc').find('.p-product__summ-price span').text(result)
     }
 
 	// вызов функции
@@ -488,6 +496,42 @@ $(function(){
 		$('.catalog__tab').removeClass('active')
 		$('.'+point).addClass('active')
 	})
+
+	// Слайдер в карточке товара
+	$('.p-product__pic-slider').slick({
+  		slidesToShow: 1,
+  		slidesToScroll: 1,
+  		arrows: false,
+  		dots: false,
+      	asNavFor: '.p-product__thumb'
+	});
+
+	// Слайдер в карточке товара мин
+	$('.p-product__thumb').slick({
+  		slidesToShow: 5,
+  		slidesToScroll: 1,
+  		arrows: false,
+  		dots: false,
+      	asNavFor: '.p-product__pic-slider'
+	});
+
+	// Faq разворот списка
+	$(document).on('click', '.faq__item-tlt', function()
+	{
+
+        var parent = $(this).parents('.faq__item');
+        var menu = $(this).next();
+
+        $('.faq__item').removeClass('active')
+
+        if( $(menu).is(':visible')){
+            $(parent).removeClass('active')
+        }
+        else{
+            $(parent).addClass('active')
+        }
+
+    })
 
 
 
