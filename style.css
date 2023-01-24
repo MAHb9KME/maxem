@@ -4020,3 +4020,147 @@ ul.control__view-ul {
     font-weight: 500;
 }
 /* Типы оплаты END */
+
+/* О компании START */
+.details {
+}
+.details--tune {
+    margin: 0px 0px 80px 0px;
+}
+.details__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.details__aside {
+    width: 40%;
+}
+.details__title {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 64px;
+    color: #333333;
+    margin: 0px 0px 24px 0px;
+}
+.details__subtlt {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #333333;
+    opacity: 0.64;
+}
+.details__cont {
+    width: 56.667%;
+}
+.details__body {
+    padding: 32px;
+    border: 1px solid rgb(51 51 51 / 10%);
+    border-radius: 8px;
+    margin: 0px 0px 40px 0px;
+}
+.details__body-h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    color: #333333;
+    max-width: 377px;
+    margin: 0px 0px 24px 0px;
+}
+.details__section {
+}
+.details__section-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0px 0px 12px 0px;
+    position: relative;
+    z-index: 1;
+}
+.details__section-line:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 17px;
+    z-index: -1;
+    border-bottom: 1px dashed rgb(51 51 51 / 16%);
+}
+.details__section-name {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: rgb(51 51 51 / 64%);
+    padding-right: 8px;
+    background-color: #fff;
+    max-width: 125px;
+}
+.details__section-numb {
+    width: 70.847%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: rgb(51 51 51 / 64%);
+    padding-left: 8px;
+    background-color: #fff;
+}
+.details__section-tlt {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 26px;
+    color: #333333;
+    margin: 0px 0px 12px 0px;
+}
+.c-maxem__download {
+}
+.details__wrdownload {
+    margin-top: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+.details__download {
+}
+.c-maxem__download-icon {
+}
+.c-maxem__download-ahead {
+}
+.c-maxem__download-tlt {
+}
+.c-maxem__download-file {
+}
+.details__links {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -8px;
+}
+.details__links-writem {
+    padding: 0 8px;
+    width: 50%;
+}
+.details__links-item {
+    background: #F2F2F2;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 32px;
+    display: block;
+}
+.details__links-img {
+    width: 32px;
+    height: 32px;
+    display: block;
+    margin: 0px 0px 32px 0px;
+}
+.details__links-tlt {
+    display: block;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    color: #333333;
+    transition: .2s color;
+}
+.details__links-item:hover .details__links-tlt {
+    color: #C8A06C;
+}
+/* О компании END */
