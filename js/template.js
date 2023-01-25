@@ -340,10 +340,12 @@ $(function(){
 		if( $('body').hasClass('burger-active') )
 		{
 			$('body').removeClass('burger-active')
+			$('body').removeClass('backstage')
 		}
 		else
 		{
 			$('body').addClass('burger-active')
+			$('body').addClass('backstage')
 		}
 	})
 
@@ -353,6 +355,7 @@ $(function(){
 		event.stopPropagation();
 
 		$('body').removeClass('burger-active')
+		$('body').removeClass('backstage')
 	})
 
 	// Подсчет числа в списке товаров
