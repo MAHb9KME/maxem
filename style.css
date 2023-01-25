@@ -1881,8 +1881,6 @@ body.burger-active .header__wrnav {
     background: #FFFFFF;
     border: 1px solid #EBEBEB;
     border-radius: 8px;
-    position: relative;
-    z-index: 1;
     padding: 24px;
     position: relative;
     z-index: 1;
@@ -4827,3 +4825,90 @@ ul.control__view-ul {
     margin: 16px 0px 0px 0px;
 }
 /* Корзина END */
+
+/* Текущие заказы START */
+.orders {
+}
+.orders__body {
+    margin: 0px 0px 56px 0px;
+}
+.orders__body:last-child {
+    margin: 0;
+}
+.orders__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    color: #333333;
+    margin: 0px 0px 16px 0px;
+}
+.orders__inner {
+}
+.orders__line {
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #EBEBEB;
+}
+.orders__line:first-child {
+    border-top: 1px solid #EBEBEB;
+}
+.orders__line-focus {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-right: 35px;
+}
+.orders__line-round {
+    width: 56px;
+    height: 56px;
+    background: #C8A06C;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    margin: 0px 16px 0px 0px;
+}
+.orders__line-detail {
+}
+.orders__line-subtlt {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #333333;
+    opacity: 0.64;
+    margin: 0px 0px 4px 0px;
+}
+.orders__line-tlt {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+}
+.orders__line-labels {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 -2px;
+}
+.orders__line-label {
+    padding: 1px 8px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 22px;
+    color: #FFFFFF;
+    background: #82367B;
+    border-radius: 4px;
+    margin: 0px 2px;
+}
+.orders__line-label--gray {
+    color: #333;
+    background: #EBEBEB;
+}
+.orders__line-label--green {
+    background: #49A153;
+}
+/* Текущие заказы END */
