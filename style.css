@@ -264,6 +264,14 @@ i{
     /*color: #fff;
     background-color: #D9B688;*/
 }
+.btn.btn--gray {
+    background-color: #EBEBEB;
+    color: #333333;
+}
+.btn.btn--gray:hover {
+    color: #fff;
+    background-color: #D9B688;
+}
 .hide{
     display:none
 }
@@ -4319,6 +4327,9 @@ ul.control__view-ul {
 .common-page__h1 {
     margin: 0px 0px 20px 0px;
 }
+.page-order .common-page__h1 {
+    margin: 0 0 2px 0;
+}
 .bone {
 }
 .bone--tune {
@@ -4330,6 +4341,35 @@ ul.control__view-ul {
     align-items: center;
     margin: 0px 0px 18px 0px;
     width: 73.334%;
+}
+
+.bone__action-order {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.bone__action-date {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: #333333;
+    opacity: 0.64;
+    margin: 0px 8px 0px 0px;
+}
+.bone__action-label {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.bone__action-labelitem {
+    padding: 1px 8px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 22px;
+    color: #FFFFFF;
+    background: #82367B;
+    border-radius: 4px;
+    margin: 0px 4px 0px 0px;
 }
 .bone__action-line {
 }
@@ -4448,6 +4488,15 @@ ul.control__view-ul {
     border-radius: 4px;
     transform: translateY(-50%);
 }
+.page-order .lister__check-label:before,
+.page-order .lister__check-label:after {
+    display: none;
+}
+.page-order .lister__check {
+    width: 80px;
+    min-width: 80px;
+    padding-left: 0;
+}
 .lister__check-input {
     width: 0;
     height: 0;
@@ -4505,6 +4554,10 @@ ul.control__view-ul {
 }
 .lister__cover--end {
     justify-content: flex-end;
+}
+.lister__cover--order {
+    width: 33.4%;
+    padding-right: 40px;
 }
 .lister__cover .product__action-numeric {
     margin: 0 15px;
@@ -4582,6 +4635,80 @@ ul.control__view-ul {
     width: 24px;
     height: 24px;
 }
+
+.additional {
+}
+.additional--tune {
+    padding: 56px 0 0;
+}
+.additional__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    color: #333333;
+    margin: 0px 0px 16px 0px;
+}
+.additional__body {
+}
+.additional__line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 0px 8px 0px;
+    position: relative;
+    z-index: 1;
+}
+.additional__line:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 15px;
+    z-index: -1;
+    border-bottom: 1px dashed rgb(51 51 51 / 16%);
+}
+.additional__line-name {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: rgb(51 51 51 / 56%);
+    padding-right: 8px;
+    background-color: #fff;
+}
+.additional__line-val,
+.additional__line-val a {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: right;
+    color: #333333;
+}
+.additional__line-val {
+    padding-left: 8px;
+    background-color: #fff;
+}
+.additional__comment {
+    margin: 16px 0 0 0;
+}
+.additional__comment-tlt {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: #333333;
+    opacity: 0.56;
+    margin: 0px 0px 4px 0px;
+}
+.additional__comment-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 21px;
+    color: #333333;
+}
+
 .bone__side {
     width: 23.37%;
 }
@@ -4591,18 +4718,20 @@ ul.control__view-ul {
     padding: 24px;
     margin-bottom: 10px;
 }
+.bone__side-border {
+    border-bottom: 1px solid #EBEBEB;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+}
 .bone__side-btn {
     width: 100%;
-    margin: 0px 0px 16px 0px;
 }
 .bone__side-info {
     font-weight: 400;
     font-size: 10px;
     line-height: 16px;
     color: rgb(51 51 51 / 56%);
-    border-bottom: 1px solid #EBEBEB;
-    padding-bottom: 16px;
-    margin-bottom: 16px;
+    margin: 16px 0px 0px 0px;
 }
 .bone__side-tlt {
     font-weight: 500;
@@ -4692,5 +4821,9 @@ ul.control__view-ul {
     padding-left: 6px;
     background-color: #fff;
     margin: 0px 0px 0px 10px;
+}
+.bone__side-cancel {
+    width: 100%;
+    margin: 16px 0px 0px 0px;
 }
 /* Корзина END */
