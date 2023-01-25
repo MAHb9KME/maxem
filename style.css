@@ -285,6 +285,7 @@ i{
     text-decoration: none;
     vertical-align: middle;
     transition: all 0.2s;
+    white-space: nowrap;
 }
 .btn:hover{
     color: #fff;
@@ -1398,7 +1399,7 @@ body.burger-active .header__wrnav {
     z-index: 1;
 }
 .l-search__form-inp {
-    padding: 9px 50px 9px 16px;
+    padding: 9px 50px 9px 16px !important;
 }
 .l-search__form-submit {
     position: absolute;
@@ -2008,6 +2009,7 @@ body.burger-active .header__wrnav {
     margin: -4px;
 }
 .eventlist .typelist__ul {
+    flex-wrap: initial;
     margin-bottom: 20px;
 }
 .typelist__li {
@@ -2020,6 +2022,7 @@ body.burger-active .header__wrnav {
     border-radius: 4px;
     cursor: pointer;
     padding: 5px 15px;
+    white-space: nowrap;
 }
 .typelist__li.active,
 .typelist__li:hover {
@@ -2552,21 +2555,8 @@ ul.control__view-ul {
     position: relative;
     z-index: 1;
 }
-.c-maxem__title:after {
-    content: '';
-    display: inline-block;
-    vertical-align: middle;
-    width: 32px;
-    height: 32px;
-    position: absolute;
-    top: 0;
-    left: auto;
-    right: 0;
-    z-index: 2;
-    background-image: url(images/icons/h1-star.svg);
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: contain;
+.c-maxem__brick {
+
 }
 .c-maxem__desc {
     width: 54.584%;
@@ -2585,6 +2575,30 @@ ul.control__view-ul {
     color: #333333;
     margin: 0px 0px 40px 0px;
 }
+
+.c-maxem__title--maxem {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    z-index: 1;
+}
+.c-maxem__title--maxem:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: -30px;
+    z-index: 2;
+    background-image: url(images/icons/h1-star.svg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 .c-maxem__actions {
     display: flex;
     justify-content: flex-start;
@@ -2635,6 +2649,9 @@ ul.control__view-ul {
     line-height: 20px;
     color: #333333;
     opacity: 0.72;
+}
+.c-maxem__download-mobile {
+    display: none;
 }
 /* Максем описание END */
 
@@ -2726,6 +2743,7 @@ ul.control__view-ul {
 .footer-top {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 76px 0 56px;
     border-bottom: 1px solid rgb(255 255 255 / 8%);
 }
@@ -2738,6 +2756,10 @@ ul.control__view-ul {
 }
 .footer-about__logo {
     margin: 0px 0px 34px 0px;
+}
+.footer-about__logo-img {
+    display: inline-block;
+    vertical-align: top;
 }
 .footer-about__txt {
     margin: 0px 0px 32px 0px;
@@ -2850,6 +2872,7 @@ ul.control__view-ul {
     line-height: 20px;
     color: #FFFFFF;
     opacity: 0.4;
+    transition: .2s opacity;
 }
 .footer-bottom__data-ofert {
     display: block;
@@ -4900,6 +4923,7 @@ ul.control__view-ul {
     padding-left: 6px;
     background-color: #fff;
     margin: 0px 0px 0px 10px;
+    white-space: nowrap;
 }
 .bone__side-cancel {
     width: 100%;
