@@ -534,8 +534,17 @@ $(function(){
 
     })
 
+	// Табы в оформлении заказа
+	$(document).on('click', '.customer__type-select', function()
+	{
+        var get_id = $(this).attr('data');
 
+        $('.customer__type-select').removeClass('customer__type-select--active')
+        $(this).addClass('customer__type-select--active')
 
+        $('.listner__tab').removeClass('listner__tab--active');
+        $('.listner__tab.'+get_id).addClass('listner__tab--active');
+    });
 
 
 
