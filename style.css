@@ -48,6 +48,7 @@ input[type="email"],
 textarea{
     color: #333333;
     padding: 9px 16px;
+    padding: 13px 16px;
     font-weight: 500;
     font-size: 14px;
     line-height: 24px;
@@ -5129,3 +5130,52 @@ ul.control__view-ul {
     height: 104px;
 }
 /* Оформление заказа END */
+
+/* Профиль START */
+.p-profile {
+    margin: 0px 0px 40px 0px;
+}
+.p-profile--tune {
+}
+.p-profile__inner {
+    padding: 24px 0;
+    border-top: 1px solid #EBEBEB;
+    border-bottom: 1px solid #EBEBEB;
+    margin: 0px 0px 24px 0px;
+}
+.p-profile__wraper {
+    margin: 0px 0px 48px 0px;
+}
+.p-profile__wraper:last-child {
+    margin: 0px 0px 0px 0px;
+}
+.p-profile__wrap {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 -8px;
+}
+.p-profile__item {
+    width: 33.333%;
+    padding: 12px 8px;
+}
+.p-profile__item-input {
+}
+.p-profile__wraper-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    color: #333333;
+    margin-bottom: 4px;
+}
+.p-profile__wrbtn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.p-profile__btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 16px 32px;
+}
+/* Профиль END */
