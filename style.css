@@ -789,6 +789,7 @@ body.backstage {
     font-size: 14px;
     line-height: 24px;
     color: #333333;
+    white-space: nowrap;
     margin: 0px 24px 0px 0px;
 }
 .header__cities {
@@ -802,6 +803,7 @@ body.backstage {
     z-index: 2;
     padding-right: 15px;
     cursor: pointer;
+    white-space: nowrap;
 }
 .header__cities-main:after {
     content: '';
@@ -871,6 +873,7 @@ body.backstage {
 .header-searh__form {
     position: relative;
     z-index: 1;
+    margin-right: 14px;
 }
 .header-searh__form-inp[type="text"] {
     width: 320px;
@@ -900,11 +903,11 @@ body.backstage {
 }
 .header__icon {
     display: block;
-    width: 20px;
-    height: 18px;
+    width: 44px;
+    height: 44px;
     position: relative;
     z-index: 1;
-    margin: 0px 0px 0px 32px;
+    margin: 0px 0px 0px 8px;
 }
 .header__icon:before {
     content: '';
@@ -929,11 +932,12 @@ body.backstage {
     height: 18px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 20px;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
     transition: .2s all;
+    transform: translate(-50%, -50%);
 }
 .header__icon-numb {
     font-size: 10px;
@@ -946,8 +950,8 @@ body.backstage {
     display: block;
     padding: 2px 7px;
     position: absolute;
-    top: -14px;
-    left: -11px;
+    top: 0px;
+    left: 0px;
     z-index: 2;
 }
 .header__icon--favorite:before {
@@ -963,7 +967,7 @@ body.backstage {
     background-image: url(images/icons/basket-broun.svg);
 }
 .profile {
-    margin: 0px 0px 0px 40px;
+    margin: 0px 0px 0px 28px;
     position: relative;
     z-index: 4;
     overflow: hidden;
@@ -2686,6 +2690,7 @@ ul.control__view-ul {
     width: 100%;
     margin: 0 -8px;
 }
+.blog__wrcont {}
 .blog__writem {
     width: 33.333%;
     padding: 0 8px;
@@ -2731,6 +2736,9 @@ ul.control__view-ul {
     color: #333333;
     opacity: 0.56;
     display: block;
+}
+.blog__mobile-btn {
+    display: none;
 }
 /* Блог END */
 
@@ -4165,9 +4173,9 @@ ul.control__view-ul {
 .details__title {
     font-weight: 500;
     font-size: 48px;
-    line-height: 64px;
+    line-height: 50px;
     color: #333333;
-    margin: 0px 0px 24px 0px;
+    margin: 0px 0px 20px 0px;
 }
 .details__subtlt {
     font-weight: 400;
@@ -4242,6 +4250,13 @@ ul.control__view-ul {
     margin: 0px 0px 12px 0px;
 }
 .c-maxem__download {
+}
+.details__mobile {
+    display: none;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 24px;
+    color: #333333;
 }
 .details__wrdownload {
     margin-top: 20px;
@@ -5165,6 +5180,21 @@ ul.control__view-ul {
 }
 .delivering__item-name strong {
     font-weight: 500;
+    white-space: nowrap;
+}
+.delivering__item-mobile {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #333333;
+    opacity: 0.64;
+    display: none;
+}
+.delivering__item-mobile p {
+    margin: 0px 0px 20px 0px;
+}
+.delivering__item-mobile p:last-child {
+    margin: 0px 0px 0px 0px;
 }
 .delivering__text,
 .delivering__text p {
