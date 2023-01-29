@@ -506,6 +506,7 @@ $(function(){
   		slidesToScroll: 1,
   		arrows: false,
   		dots: false,
+  		fade: true,
       	asNavFor: '.p-product__thumb'
 	});
 
@@ -516,7 +517,15 @@ $(function(){
   		arrows: false,
   		dots: false,
       	focusOnSelect: true,
-      	asNavFor: '.p-product__pic-slider'
+      	asNavFor: '.p-product__pic-slider',
+  		responsive: [
+		{
+		    breakpoint: 1000,
+		    settings: {
+				slidesToShow: 4,
+				slidesToScroll: 1
+			}
+		}]
 	});
 
 	// Faq разворот списка
