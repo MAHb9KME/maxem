@@ -558,6 +558,20 @@ $(function(){
         $('.listner__tab.'+get_id).addClass('listner__tab--active');
     });
 
+    // Разворот полосы поиска на мобиле
+    if( $(document).width() <= 1200)
+	{
+
+		$(document).on('click', '.header-searh__form-trigger', function()
+		{
+		 	if($('body').hasClass('search-active'))
+		 		$('body').removeClass('search-active')
+	 		else
+	 			$('body').addClass('search-active')
+			
+		});
+	}
+
 
 
 
