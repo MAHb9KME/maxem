@@ -534,17 +534,34 @@ header nav ul, header nav ul li {
     margin: 0;
     position: relative;
 }
-header nav a {
-    font-weight: 700;
-    line-height: 20px;
-    padding: 0px;
-    transition: .3s all;
-    display: block;
-    text-decoration:none !important;
-}
 header nav .menu_container .menu_wrapper .footer{
     display:none;
 }
+header nav .menu_container .close  {
+    display: none;
+}
+
+.headernav-wrtop {
+    margin: 0 -8px;
+    display: none;
+}
+.headernav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #EBEBEB;
+    padding: 0px 0px 16px;
+}
+.headernav-top__tel {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 24px;
+    color: #000000;
+}
+.headernav-top--cities .header__cities-main {
+    font-size: 13px;
+}
+
 
 #xs_recall{
     max-width: 460px;
@@ -803,6 +820,19 @@ body.backstage {
     margin: 0px 24px 0px 0px;
 }
 .header__cities {
+}
+.headernav-top--cities {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+.headernav-top--cities.active {
+    overflow: initial;
+}
+.headernav-top--cities.active .h-cities {
+    top: 100%;
+    opacity: 1;
+    z-index: 5;
 }
 .header__cities-main {
     font-weight: 500;
@@ -1402,6 +1432,184 @@ body.burger-active .header__wrnav {
 }
 .soc-menu__link:hover {
     color: #C8A06C;
+}
+
+.headernav-menu {
+    display: none;
+    margin: 16px 0 14px;
+}
+.headernav-menu__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    padding: 16px 9px;
+    border-bottom: 1px solid #EBEBEB;
+}
+.headernav-menu__item-name {
+    display: block;
+    padding-left: 32px;
+    position: relative;
+    z-index: 1;
+}
+.headernav-menu__item-name::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    transform: translateY(-50%);
+}
+.headernav-menu__item-amount {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #82367B;
+    border-radius: 24px;
+    display: block;
+    padding: 2px 7px;
+}
+.headernav-menu__item--account .headernav-menu__item-name::before {
+    background-image: url(images/icons/account.svg);
+}
+.headernav-menu__item-basket .headernav-menu__item-name::before {
+    background-image: url(images/icons/basket.svg);
+}
+.headernav-menu__item--favorite .headernav-menu__item-name::before {
+    background-image: url(images/icons/favorite.svg);
+}
+
+.account-mobile {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    left: -100%;
+    bottom: 0;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.33);
+    transition: .3s all;
+}
+body.mobile-menuaccount .account-mobile {
+    left: 0%;
+}
+.account-mobile__close {
+    width: 48px;
+    height: 67px;
+    display: block;
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.account-mobile__close:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 32px;
+    height: 32px;
+    background-color: #333333;
+    border-radius: 4px;
+}
+.account-mobile__close svg {
+    position: relative;
+    z-index: 1;
+}
+.account-mobile__wrapper {
+    position: absolute;
+    top: 0;
+    left: 48px;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    overflow: auto;
+}
+.account-mobile__wrapper-inner {
+    position: relative;
+    padding: 22px 16px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.account-mobile__body {
+}
+.account-mobile__head {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 22px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #EBEBEB;
+}
+.account-mobile__icon {
+    margin: 0px 16px 0px 0px;
+}
+.account-mobile__icon svg {
+    position: relative;
+    z-index: 3;
+}
+.account-mobile__data {
+}
+.account-mobile__data-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+.account-mobile__data-mail {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #333333;
+    opacity: 0.64;
+}
+.account-mobile__ul {
+}
+.account-mobile__li {
+    border-bottom: 1px solid #EBEBEB;
+}
+.account-mobile__li:last-child {
+    border-bottom: 1px solid transparent;
+}
+.account-mobile__link {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    padding: 16px 0;
+}
+.account-mobile__exit {
+}
+.account-mobile__exit-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    padding: 16px 8px 24px;
+    border-top: 1px solid #EBEBEB;
 }
 /* Header END */
 

@@ -85,11 +85,13 @@ $(function(){
 	
 	
 	// Выдвигаем адаптивное меню
-	
-	$('.buttonMenu').click(function()
+	if( $(document).width() <= 1000)
 	{
-		$('body').toggleClass('show_menu')
-	})
+		$('.burger').click(function()
+		{
+			$('body').toggleClass('show_menu')
+		})
+	}
 	
 	$('header nav .menu_container .close').click(function()
 	{
@@ -552,13 +554,13 @@ $(function(){
     // Сайдбар и фильтр на мобильных устройствах
 	$(document).on('click', '.nav-mobile__side', function()
 	{
-        
         var get_id = $(this).data('tab');
 
         if( $(this).hasClass('active'))
     	{
     		$(this).removeClass('active')
     		$('.nav-mobile__item').removeClass('active');
+    		$('.nav-mobile__body').removeClass('active');
     	}
     	else
     	{
@@ -567,8 +569,32 @@ $(function(){
 
 
 	        $('.nav-mobile__item').removeClass('active');
+	        $('.nav-mobile__body').addClass('active');
 	        $('.nav-mobile__item.'+get_id).addClass('active');
     	}
+    });
+
+    // Меню личного кабинета мобильные устройства
+    $(document).on('click', '.headernav-menu__item--account', function()
+	{
+		$('body').removeClass('show_menu')
+        $('body').addClass('mobile-menuaccount')
+    });
+
+    // Меню личного кабинета мобильные устройства
+    $(document).on('click', '.account-mobile__close', function()
+	{
+		$('body').removeClass('mobile-menuaccount')
+    });
+
+    // Выпадающее меню городов мобильные устройства
+    $(document).on('click', '.headernav-top--cities .header__cities-main', function()
+	{
+		parent = $(this).parents('.headernav-top--cities')
+		if(parent.hasClass('active'))
+			parent.removeClass('active')
+		else
+			parent.addClass('active')
     });
 
 
