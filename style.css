@@ -628,6 +628,9 @@ header nav .menu_container .close  {
 #xs_recall input[type=checkbox]:checked + label:after {
     top: 14px;
 }
+#xs_recall .policy {
+    color: #7C7C7C;
+}
 .xs_result{
     color:green;
 }
@@ -885,6 +888,8 @@ body.backstage {
     margin: 0 8px 8px;
 }
 .h-cities__search {
+    padding: 9px 16px !important;
+    font-weight: 400 !important;
 }
 .h-cities__ul {
 }
@@ -3097,7 +3102,7 @@ ul.control__view-ul {
     max-width: 360px;
 }
 .footer-about__logo {
-    margin: 0px 0px 34px 0px;
+    margin: 0px 0px 50px 0px;
 }
 .footer-about__logo-img {
     display: inline-block;
@@ -3995,7 +4000,7 @@ ul.control__view-ul {
 }
 .extra-catalog {
     display: flex;
-    margin: 0 -12px 36px;
+    margin: 0 -12px 20px;
 }
 .extra-catalog__product {
     width: 25%;
@@ -4023,6 +4028,7 @@ ul.control__view-ul {
     line-height: 64px;
     color: #333333;
     margin: 0px 0px 24px 0px;
+    padding-top: 10px;
 }
 .faq__subtlt {
     font-weight: 400;
@@ -4403,6 +4409,7 @@ ul.control__view-ul {
     font-size: 20px;
     line-height: 28px;
     color: #000000;
+    max-width: 195px;
     margin: 0px 0px 16px 0px;
 }
 .pros__subtitle {
@@ -4434,6 +4441,7 @@ ul.control__view-ul {
     line-height: 64px;
     color: #333333;
     margin: 0px 0px 24px 0px;
+    padding-top: 10px;
 }
 .types__subtlt {
     font-weight: 400;
@@ -4441,7 +4449,7 @@ ul.control__view-ul {
     line-height: 26px;
     color: #333333;
     opacity: 0.64;
-    max-width: 240px;
+    max-width: 337px;
 }
 .types__content {
     width: 56.667%;
@@ -4512,6 +4520,7 @@ ul.control__view-ul {
     font-size: 48px;
     line-height: 50px;
     color: #333333;
+    padding-top: 10px;
     margin: 0px 0px 20px 0px;
 }
 .details__subtlt {
@@ -4639,6 +4648,7 @@ ul.control__view-ul {
     line-height: 32px;
     color: #333333;
     transition: .2s color;
+    max-width: 225px;
 }
 .details__links-item:hover .details__links-tlt {
     color: #C8A06C;
@@ -4684,6 +4694,7 @@ ul.control__view-ul {
 }
 .events--tune {
     margin-top: -148px;
+    padding-bottom: 20px;
 }
 .events__inner {
 }
@@ -5632,7 +5643,7 @@ ul.control__view-ul {
 
 /* Профиль START */
 .p-profile {
-    margin: 0px 0px 40px 0px;
+    margin: 0px 0px 0px 0px;
 }
 .p-profile--tune {
 }
