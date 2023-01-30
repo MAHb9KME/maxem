@@ -18,41 +18,18 @@ function tpaneScroll()
 {
 	var $scrollTop = parseInt(jQuery(window).scrollTop()),
 		$scrollPane = jQuery('body'),
-		h = jQuery('.header-contact').outerHeight(),
-		tot_h = jQuery('.header-fix').outerHeight(),
+		h=0,
 		w = parseInt(jQuery(window).width())
 		
 	if($scrollTop > h)
 	{
 		if(!$scrollPane.hasClass('fix'))
-		{
 			$scrollPane.addClass('fix')
-
-			if( jQuery(window).width() > 700)
-			{
-				jQuery('.main-screen').css("margin-top", tot_h)
-			}
-		}
 	}
 	else
 	{
-		if( jQuery(window).width() > 700)
-		{
-			if($scrollPane.hasClass('fix'))
-			{
-				$scrollPane.removeClass('fix')
-
-				if( jQuery(window).width() > 700)
-				{
-					jQuery('.main-screen').css("margin-top", "0")
-				}
-			}
-		}
-	}
-
-	if( jQuery(window).width() < 700)
-	{
-		jQuery('.main-screen').css("margin-top", tot_h)
+		if($scrollPane.hasClass('fix'))
+			$scrollPane.removeClass('fix')
 	}
 }
 
@@ -558,7 +535,7 @@ $(function(){
         $('.listner__tab.'+get_id).addClass('listner__tab--active');
     });
 
-    // Разворот полосы поиска на мобиле
+    // Разворот полосы поиска на мобильных устройтвах
     if( $(document).width() <= 1200)
 	{
 
@@ -572,7 +549,27 @@ $(function(){
 		});
 	}
 
+    // Сайдбар и фильтр на мобильных устройствах
+	$(document).on('click', '.nav-mobile__side', function()
+	{
+        
+        var get_id = $(this).data('tab');
 
+        if( $(this).hasClass('active'))
+    	{
+    		$(this).removeClass('active')
+    		$('.nav-mobile__item').removeClass('active');
+    	}
+    	else
+    	{
+    		$('.nav-mobile__side').removeClass('active')
+	        $(this).addClass('active')
+
+
+	        $('.nav-mobile__item').removeClass('active');
+	        $('.nav-mobile__item.'+get_id).addClass('active');
+    	}
+    });
 
 
 })

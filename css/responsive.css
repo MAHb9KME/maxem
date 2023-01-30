@@ -492,6 +492,24 @@
 	.p-product__move-culc .product__action-chislo {
 	    width: 24px;
 	}
+
+	.header__bottom {
+		display: none;
+	}
+	.nav-mobile {
+	    display: block;
+	}
+	.nav-mobile__body {
+	    border-top: 1px solid #EBEBEB;
+	}
+	.nav-mobile .sidebar__content-li ul li a,
+	.nav-mobile .sidebar__content-name {
+	    font-size: 16px;
+	    color: #333333 !important;
+	}
+	.sidebar__alot-label {
+	    margin: 0px 5px 12px 0px;
+	}
 }
 
 @media screen and (max-width:950px){
@@ -711,9 +729,6 @@
 	.c-maxem__image {
 		display: none;
 	}
-	.header__bottom {
-		display: none;
-	}
 	.header__top {
 		border-bottom: none;
 	}
@@ -729,6 +744,16 @@
 	}
 	body.search-active .search-mobile {
 	    margin-bottom: 20px;
+	}
+	.nav-mobile {
+		border-top: 1px solid rgb(51 51 51 / 10%);
+		margin: 0 -15px;
+	}
+	.nav-mobile__inner {
+		margin: 0 -15px;
+	}
+	.nav-mobile__body {
+		padding: 0 15px;
 	}
 
 }
@@ -1687,6 +1712,10 @@
 	.p-product__basket {
 	    font-size: 0;
 	    padding: 10px 4px 10px 15px;
+	}
+	.nav-mobile .sidebar__content-li ul li a, 
+	.nav-mobile .sidebar__content-name {
+	    font-size: 13px;
 	}
 }
 
